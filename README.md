@@ -1,6 +1,6 @@
 # Hey, I'm Shubhankar 👋
 
-**Building AI agent infrastructure & developer tools at [Paloa Labs](https://zigsaw.dev) in San Francisco.**
+**Building Computer Vision infrastructure & AI-native Analytical tools at [Paloa Labs](https://paloa.ai) in Palo Alto, CA.**
 
 I'm obsessed with making AI agents that actually work — event-driven systems, reinforcement learning from human feedback, and tools that turn messy real-world interfaces into clean APIs.
 
