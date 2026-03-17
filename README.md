@@ -16,6 +16,10 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 | 🏀 [**paloa-claw**](https://github.com/lonexreb/paloa-claw) | Personal basketball AI training assistant |
 | 🎓 [**university-sim**](https://github.com/lonexreb/university-sim) | Multi-agent university simulation benchmark with Concordia GM + OpenClaw |
 | ⚡ [**RLYX-enhancer**](https://github.com/lonexreb/RLYX-enhancer) | Hackable GRPO training framework with high-speed weight sync for multi-node RL |
+| 🩺 [**AgentKit-Health**](https://github.com/lonexreb/AgentKit-Health) | Marketplace of pre-built AI agent templates for health workflows — Sleep Coach, Burnout Detector, Recovery Agent & more |
+| 🏠 [**HandyHommieAI**](https://github.com/lonexreb/HandyHommieAI) | AI-powered home appliance command center — upload manuals, ask questions, auto-call manufacturer support |
+| 🃏 [**blackjack-for-toddler**](https://github.com/lonexreb/blackjack-for-toddler) | Toddler-friendly Blackjack that teaches numbers & addition — React PWA with Capacitor for iOS |
+| 🃏 [**poker-for-toddler**](https://github.com/lonexreb/poker-for-toddler) | Texas Hold'em for kids (ages 4–9) with toy cars, gems & crowns — React PWA on Vercel |
 
 ## 🧠 Areas of Focus
 
@@ -23,6 +27,8 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 - **Reinforcement Learning** — GRPO, DAPO, process reward models, RLHF
 - **Developer Tools** — MCP servers, CLI generators, API discovery
 - **Applied ML** — federated RL ([flower.ai contributor](https://github.com/lonexreb/flwr-frl-kit)), deep finance RL
+- **Health & Wellness AI** — agent templates for wearable data, sleep coaching, burnout detection
+- **EdTech for Kids** — gamified learning apps for toddlers, math through card games
 
 ## 🛠️ Tech Stack
 
