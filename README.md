@@ -10,12 +10,12 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 
 | Project | What it does |
 |---|---|
+| 🌐 [**site2cli**](https://github.com/lonexreb/site2cli) | Turn any website into a CLI/API automatically — on PyPI, 156 tests passing |
 | 🏎️ [**aero-agent**](https://github.com/lonexreb/aero-agent) | CFD-aware research assistant for F1 aerodynamicists — synthesize literature, correlate CFD, optimize every simulation hour under FIA ATR constraints |
 | 🧬 [**FounderAgent**](https://github.com/lonexreb/FounderAgent) | Autonomous health-aware AI agent — reads your biometrics, blocks calendar, sets Slack DND, sends recovery protocols |
 | 🏆 [**FounderLeague**](https://github.com/lonexreb/FounderLeague) | Gamified league platform where founders compete on readiness, sleep quality & recovery — anti-hustle-culture leaderboards |
 | 🧠 [**GameDay-AMS**](https://github.com/lonexreb/GameDay-AMS) | Cognitive Performance System for Founders — sports science meets knowledge work |
 | 🤖 [**agentic-employees**](https://github.com/lonexreb/agentic-employees) | Event-driven AI agents with GRPO training, NATS messaging, and appraisal-style feedback loops |
-| 🌐 [**site2cli**](https://github.com/lonexreb/site2cli) | Turn any website into a CLI/API automatically — on PyPI, 156 tests passing |
 | 🔬 [**MCPstudio**](https://github.com/lonexreb/MCPstudio) | Postman for MCP servers — inspect, test, and debug MCP tools |
 | 🏀 [**paloa-claw**](https://github.com/lonexreb/paloa-claw) | Personal basketball AI training assistant |
 | 🎓 [**university-sim**](https://github.com/lonexreb/university-sim) | Multi-agent university simulation benchmark with Concordia GM + OpenClaw |
