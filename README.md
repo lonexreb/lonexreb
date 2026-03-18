@@ -10,6 +10,10 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 
 | Project | What it does |
 |---|---|
+| 🏎️ [**aero-agent**](https://github.com/lonexreb/aero-agent) | CFD-aware research assistant for F1 aerodynamicists — synthesize literature, correlate CFD, optimize every simulation hour under FIA ATR constraints |
+| 🧬 [**FounderAgent**](https://github.com/lonexreb/FounderAgent) | Autonomous health-aware AI agent — reads your biometrics, blocks calendar, sets Slack DND, sends recovery protocols |
+| 🏆 [**FounderLeague**](https://github.com/lonexreb/FounderLeague) | Gamified league platform where founders compete on readiness, sleep quality & recovery — anti-hustle-culture leaderboards |
+| 🧠 [**GameDay-AMS**](https://github.com/lonexreb/GameDay-AMS) | Cognitive Performance System for Founders — sports science meets knowledge work |
 | 🤖 [**agentic-employees**](https://github.com/lonexreb/agentic-employees) | Event-driven AI agents with GRPO training, NATS messaging, and appraisal-style feedback loops |
 | 🌐 [**site2cli**](https://github.com/lonexreb/site2cli) | Turn any website into a CLI/API automatically — on PyPI, 156 tests passing |
 | 🔬 [**MCPstudio**](https://github.com/lonexreb/MCPstudio) | Postman for MCP servers — inspect, test, and debug MCP tools |
@@ -27,7 +31,9 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 - **Reinforcement Learning** — GRPO, DAPO, process reward models, RLHF
 - **Developer Tools** — MCP servers, CLI generators, API discovery
 - **Applied ML** — federated RL ([flower.ai contributor](https://github.com/lonexreb/flwr-frl-kit)), deep finance RL
+- **Founder Performance** — biometric-driven agents, cognitive performance systems, gamified health optimization
 - **Health & Wellness AI** — agent templates for wearable data, sleep coaching, burnout detection
+- **F1 & Motorsport AI** — CFD-aware research assistants, aerodynamic optimization under FIA constraints
 - **EdTech for Kids** — gamified learning apps for toddlers, math through card games
 
 ## 🛠️ Tech Stack
@@ -39,6 +45,8 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat&logo=pydantic&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
 
 ## 📫 Find Me
 
