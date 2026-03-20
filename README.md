@@ -16,7 +16,7 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 | 🏆 [**FounderLeague**](https://github.com/lonexreb/FounderLeague) | Gamified league platform where founders compete on readiness, sleep quality & recovery — anti-hustle-culture leaderboards |
 | 🧠 [**GameDay-AMS**](https://github.com/lonexreb/GameDay-AMS) | Cognitive Performance System for Founders — sports science meets knowledge work |
 | 🤖 [**agentic-employees**](https://github.com/lonexreb/agentic-employees) | Event-driven AI agents with GRPO training, NATS messaging, and appraisal-style feedback loops |
-| 🔬 [**MCPstudio**](https://github.com/lonexreb/MCPstudio) | Postman for MCP servers — inspect, test, and debug MCP tools |
+| 🔬 [**MCPstudio**](https://github.com/lonexreb/MCPstudio) | The Postman for MCP — create, test, manage & discover MCP servers with a visual UI. FastAPI + React, DDD architecture, Google Drive integration, JWT auth |
 | 🏀 [**paloa-claw**](https://github.com/lonexreb/paloa-claw) | Personal basketball AI training assistant |
 | 🎓 [**university-sim**](https://github.com/lonexreb/university-sim) | Multi-agent university simulation benchmark with Concordia GM + OpenClaw |
 | ⚡ [**RLYX-enhancer**](https://github.com/lonexreb/RLYX-enhancer) | Hackable GRPO training framework with high-speed weight sync for multi-node RL |
