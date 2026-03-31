@@ -10,7 +10,7 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 
 | Project | What it does |
 |---|---|
-| 🌐 [**site2cli**](https://github.com/lonexreb/site2cli) | Turn any website into a CLI/API automatically — on PyPI, 156 tests passing |
+| 🌐 [**site2cli**](https://github.com/lonexreb/site2cli) | Turn any website into a CLI/API for AI agents — v0.3.0 on PyPI with cookie mgmt, browser sessions, workflow recording, background daemon, unified MCP server, 306 tests passing |
 | 🏎️ [**aero-agent**](https://github.com/lonexreb/aero-agent) | CFD-aware research assistant for F1 aerodynamicists — synthesize literature, correlate CFD, optimize every simulation hour under FIA ATR constraints |
 | 🧬 [**FounderAgent**](https://github.com/lonexreb/FounderAgent) | Autonomous health-aware AI agent — reads your biometrics, blocks calendar, sets Slack DND, sends recovery protocols |
 | 🏆 [**FounderLeague**](https://github.com/lonexreb/FounderLeague) | Gamified league platform where founders compete on readiness, sleep quality & recovery — anti-hustle-culture leaderboards |
