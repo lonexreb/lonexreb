@@ -94,7 +94,8 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 
 ## 📫 Find Me
 
-[![Website](https://img.shields.io/badge/zigsaw.dev-000?style=flat&logo=safari&logoColor=white)](https://zigsaw.dev)
+[![Portfolio](https://img.shields.io/badge/shubhankar--tripathy.vercel.app-000?style=flat&logo=safari&logoColor=white)](https://shubhankar-tripathy.vercel.app)
+[![Zigsaw](https://img.shields.io/badge/zigsaw.dev-000?style=flat&logo=safari&logoColor=white)](https://zigsaw.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/shubhankar-tripathy)
 
 ---
