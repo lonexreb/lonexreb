@@ -13,10 +13,10 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 | Project | What it does |
 |---|---|
 | 🌐 [**site2cli**](https://github.com/lonexreb/site2cli) ![GitHub stars](https://img.shields.io/github/stars/lonexreb/site2cli?style=flat&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/lonexreb/site2cli?style=flat&color=blue) | Turn any website into a CLI/API for AI agents — v0.5.0 on PyPI with LLM-powered structured extraction, proxy support, OAuth device flow, multi-site orchestration, cookie mgmt, browser sessions, workflow recording, background daemon, unified MCP server, 417 tests passing |
-| 🔬 [**MCPstudio**](https://github.com/lonexreb/MCPstudio) ![GitHub stars](https://img.shields.io/github/stars/lonexreb/MCPstudio?style=flat&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/lonexreb/MCPstudio?style=flat&color=blue) | The Postman for MCP — visual platform to create, test & manage MCP servers. FastAPI + React + Zustand + React Query + shadcn/ui, DDD backend, feature-sliced frontend, connection wizard, tool execution engine. Pipeline builder coming next |
+| 🔬 [**MCPstudio**](https://github.com/lonexreb/MCPstudio) | The Postman for MCP — visual platform to create, test & manage MCP servers. FastAPI + React + Zustand + React Query + shadcn/ui, DDD backend, feature-sliced frontend, connection wizard, tool execution engine. Pipeline builder coming next |
 | 🧩 [**zigsaw**](https://github.com/lonexreb/zigsaw) | AI workflow automation platform — chat or drag-and-drop to build workflows. Multi-AI (Claude, GPT, Gemini, Groq), instant API deployment, 100+ integrations |
-| 🔭 [**kalam**](https://github.com/lonexreb/kalam) ![GitHub stars](https://img.shields.io/github/stars/lonexreb/kalam?style=flat&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/lonexreb/kalam?style=flat&color=blue) | Terminal agent for scientific research, chip design, hardware engineering & systems security — built on Deep Agents SDK. Named after Dr. APJ Abdul Kalam |
-| 🔄 [**mobius**](https://github.com/lonexreb/mobius) ![GitHub stars](https://img.shields.io/github/stars/lonexreb/mobius?style=flat&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/lonexreb/mobius?style=flat&color=blue) | High-performance framework for autonomous ML experimentation — Rust + Go + Python |
+| 🔭 [**kalam**](https://github.com/lonexreb/kalam) | Terminal agent for scientific research, chip design, hardware engineering & systems security — built on Deep Agents SDK. Named after Dr. APJ Abdul Kalam |
+| 🔄 [**mobius**](https://github.com/lonexreb/mobius) | High-performance framework for autonomous ML experimentation — Rust + Go + Python |
 
 ### AI Agent Systems & RL
 
@@ -61,7 +61,7 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 
 | Project | What it does |
 |---|---|
-| ♟️ [**dolphine-chess**](https://github.com/lonexreb/dolphine-chess) ![GitHub stars](https://img.shields.io/github/stars/lonexreb/dolphine-chess?style=flat&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/lonexreb/dolphine-chess?style=flat&color=blue) | Multi-tenant SaaS chess academy management platform |
+| ♟️ [**dolphine-chess**](https://github.com/lonexreb/dolphine-chess) | Multi-tenant SaaS chess academy management platform |
 | 🃏 [**blackjack-for-toddler**](https://github.com/lonexreb/blackjack-for-toddler) | Toddler-friendly Blackjack that teaches numbers & addition — React PWA with Capacitor for iOS |
 | 🃏 [**poker-for-toddler**](https://github.com/lonexreb/poker-for-toddler) | Texas Hold'em for kids (ages 4-9) with toy cars, gems & crowns — React PWA on Vercel |
 | 🕉️ [**Mahamrutyunjay-Mantra-Counter**](https://github.com/lonexreb/Mahamrutyunjay-Mantra-Counter) | macOS desktop app for tracking Mahamrutyunjay Mantra chanting — voice detection, visual progress 1-108 |
