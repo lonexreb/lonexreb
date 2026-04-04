@@ -12,7 +12,7 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 
 | Project | What it does |
 |---|---|
-| 🌐 [**site2cli**](https://github.com/lonexreb/site2cli) | Turn any website into a CLI/API for AI agents — v0.3.0 on PyPI with cookie mgmt, browser sessions, workflow recording, background daemon, unified MCP server, 306 tests passing |
+| 🌐 [**site2cli**](https://github.com/lonexreb/site2cli) ![GitHub stars](https://img.shields.io/github/stars/lonexreb/site2cli?style=flat&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/lonexreb/site2cli?style=flat&color=blue) | Turn any website into a CLI/API for AI agents — v0.5.0 on PyPI with LLM-powered structured extraction, proxy support, OAuth device flow, multi-site orchestration, cookie mgmt, browser sessions, workflow recording, background daemon, unified MCP server, 417 tests passing |
 | 🔬 [**MCPstudio**](https://github.com/lonexreb/MCPstudio) | The Postman for MCP — visual platform to create, test & manage MCP servers. FastAPI + React + Zustand + React Query + shadcn/ui, DDD backend, feature-sliced frontend, connection wizard, tool execution engine. Pipeline builder coming next |
 | 🧩 [**zigsaw**](https://github.com/lonexreb/zigsaw) | AI workflow automation platform — chat or drag-and-drop to build workflows. Multi-AI (Claude, GPT, Gemini, Groq), instant API deployment, 100+ integrations |
 | 🔭 [**kalam**](https://github.com/lonexreb/kalam) | Terminal agent for scientific research, chip design, hardware engineering & systems security — built on Deep Agents SDK. Named after Dr. APJ Abdul Kalam |
