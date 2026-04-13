@@ -12,21 +12,24 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 
 | Project | What it does |
 |---|---|
-| 🌐 [**site2cli**](https://github.com/lonexreb/site2cli) ![GitHub stars](https://img.shields.io/github/stars/lonexreb/site2cli?style=flat&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/lonexreb/site2cli?style=flat&color=blue) | Turn any website into a CLI/API for AI agents — v0.5.0 on PyPI with LLM-powered structured extraction, proxy support, OAuth device flow, multi-site orchestration, cookie mgmt, browser sessions, workflow recording, background daemon, unified MCP server, 417 tests passing |
-| 🔬 [**MCPstudio**](https://github.com/lonexreb/MCPstudio) | The Postman for MCP — visual platform to create, test & manage MCP servers. FastAPI + React + Zustand + React Query + shadcn/ui, DDD backend, feature-sliced frontend, connection wizard, tool execution engine. Pipeline builder coming next |
+| 🌐 [**site2cli**](https://github.com/lonexreb/site2cli) ![GitHub stars](https://img.shields.io/github/stars/lonexreb/site2cli?style=flat&color=yellow) ![GitHub forks](https://img.shields.io/github/forks/lonexreb/site2cli?style=flat&color=blue) | Turn any website into a CLI/API for AI agents — v0.6.0 on PyPI with crawl, monitor & screenshot commands, LLM-powered structured extraction, proxy support, OAuth device flow, multi-site orchestration, browser sessions, workflow recording, background daemon, unified MCP server, 500+ tests passing |
+| 🔬 [**MCPstudio**](https://github.com/lonexreb/MCPstudio) | The Postman for MCP — visual platform to create, test & manage MCP servers. FastAPI + React + Zustand + React Query + shadcn/ui, DDD backend, feature-sliced frontend, connection wizard, tool execution engine, settings, tools library, resources/prompts browsers, onboarding tour, execution history & server discovery |
 | 🧩 [**zigsaw**](https://github.com/lonexreb/zigsaw) | AI workflow automation platform — chat or drag-and-drop to build workflows. Multi-AI (Claude, GPT, Gemini, Groq), instant API deployment, 100+ integrations |
-| 🔭 [**kalam**](https://github.com/lonexreb/kalam) | Terminal agent for scientific research, chip design, hardware engineering & systems security — built on Deep Agents SDK. Named after Dr. APJ Abdul Kalam |
+| 🔭 [**kalam**](https://github.com/lonexreb/kalam) | Terminal agent for scientific research, chip design, hardware engineering & systems security — built on Deep Agents SDK. MCP tool servers: arXiv, Yosys, ngspice, nmap, Ghidra, Icarus, GTKWave, SymPy. Named after Dr. APJ Abdul Kalam |
 | 🔄 [**mobius**](https://github.com/lonexreb/mobius) | High-performance framework for autonomous ML experimentation — Rust + Go + Python |
+| 🌟 [**morningstar**](https://github.com/lonexreb/morningstar) | Autonomous coding agent that turns Notion PRDs into working code — reads requirements, analyzes codebases, generates implementations with tests, commits & sends Slack progress updates. Powered by Claude Code |
+| 🧱 [**deepagents**](https://github.com/lonexreb/deepagents) | Batteries-included agent harness — LangChain + LangGraph with planning, filesystem ops, shell access, sub-agent spawning & auto-summarization. `pip install deepagents` |
 
 ### AI Agent Systems & RL
 
 | Project | What it does |
 |---|---|
-| 🐙 [**tentalis**](https://github.com/lonexreb/tentalis) | ADHR meta-RL framework — AI agents that continuously learn from manager feedback via GRPO training, NATS messaging, and process reward models |
+| 🐙 [**tentalis**](https://github.com/lonexreb/tentalis) | ADHR meta-RL framework — AI agents that continuously learn from manager feedback via GRPO/CISPO/DAPO training, NATS messaging, process reward models & HaluGate hallucination scorer |
 | ⚡ [**RLYX-enhancer**](https://github.com/lonexreb/RLYX-enhancer) | Hackable GRPO training framework with high-speed weight sync for multi-node RL |
 | 🤖 [**AGI-INC**](https://github.com/lonexreb/AGI-INC) | HALO-Agent — browser automation agent for AGI Inc's REAL Benchmark (112 web tasks across 11 sites). v5 with Gemini 3.1 Pro, scoring 38.5% on zero-site tasks |
 | 🎓 [**university-sim**](https://github.com/lonexreb/university-sim) | Multi-agent university simulation benchmark with Concordia GM + OpenClaw coordination + emergence metrics |
 | 🌸 [**flwr-frl-kit**](https://github.com/lonexreb/flwr-frl-kit) | Federated RL Kit for [flower.ai](https://flower.ai) — contributing federated reinforcement learning to the Flower ecosystem |
+| 📈 [**DeepFinRL-UMass**](https://github.com/lonexreb/DeepFinRL-UMass) | Multi-agent RL for automated stock trading & personalized ETF curation — hierarchical MARL with Director Agent + specialist analysts, LLM sentiment, PPO/CPPO/GRPO algorithms |
 
 ### F1 & Motorsport AI
 
@@ -45,6 +48,7 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 | 🧠 [**GameDay-AMS**](https://github.com/lonexreb/GameDay-AMS) | Cognitive Performance System for Founders — sports science meets knowledge work |
 | 🔋 [**FocusFuel-API**](https://github.com/lonexreb/FocusFuel-API) | Developer API that transforms wearable health data (HRV, sleep, training load) into cognitive performance predictions — 35 tests passing |
 | 🩺 [**AgentKit-Health**](https://github.com/lonexreb/AgentKit-Health) | Marketplace of pre-built AI agent templates for health workflows — Sleep Coach, Burnout Detector, Recovery Agent & more |
+| 💪 [**grithub**](https://github.com/lonexreb/grithub) | Sports & healthcare platform with physiological simulation — FastAPI + BioGears integration for training plan generation. Hacklytics 2025 winner |
 
 ### Applied AI & Data
 
@@ -56,34 +60,41 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 | 📺 [**zigsaw-labs**](https://github.com/lonexreb/zigsaw-labs) | AI-powered video ad creation & optimization — auto-generates, tests, and optimizes short-form video ads across TikTok, IG Reels & YouTube Shorts |
 | 📝 [**grammer-paraphrase-system**](https://github.com/lonexreb/grammer-paraphrase-system) | Grammar correction & paraphrasing system with clean DDD architecture |
 | 🏠 [**HandyHommieAI**](https://github.com/lonexreb/HandyHommieAI) | AI-powered home appliance command center — upload manuals, ask questions, auto-call manufacturer support |
+| 🎯 [**growthclaw**](https://github.com/lonexreb/growthclaw) | Autonomous founder-scouting outbound engine for Crowdstake AI — 3-stage pipeline (discover, enrich, draft), scrapes Product Hunt/Reddit/IH, scores leads 1-10, ~$0.02/lead. Built with OpenClaw at Austin Hackathon |
+| 🔲 [**kalam-placer**](https://github.com/lonexreb/kalam-placer) | Chip design macro placement optimizer — Partcl + Hudson River Trading competition ($20K prizes). Balances routing congestion, timing, power delivery & area on ibm01 benchmark |
 
 ### Fun & EdTech
 
 | Project | What it does |
 |---|---|
 | ♟️ [**dolphine-chess**](https://github.com/lonexreb/dolphine-chess) | Multi-tenant SaaS chess academy management platform |
+| 🍁 [**Maple**](https://github.com/lonexreb/Maple) | Emotion-aware AI tutoring companion — Hume EVI for emotion detection, DataBricks (DBRX + LanceDB) for RAG, Midnight blockchain for student data integrity. Smart topic breakdown & empathetic practice quizzes |
 | 🃏 [**blackjack-for-toddler**](https://github.com/lonexreb/blackjack-for-toddler) | Toddler-friendly Blackjack that teaches numbers & addition — React PWA with Capacitor for iOS |
 | 🃏 [**poker-for-toddler**](https://github.com/lonexreb/poker-for-toddler) | Texas Hold'em for kids (ages 4-9) with toy cars, gems & crowns — React PWA on Vercel |
 | 🕉️ [**Mahamrutyunjay-Mantra-Counter**](https://github.com/lonexreb/Mahamrutyunjay-Mantra-Counter) | macOS desktop app for tracking Mahamrutyunjay Mantra chanting — voice detection, visual progress 1-108 |
 
 ## 🧠 Areas of Focus
 
-- **AI Agent Systems** — event-driven architectures, multi-agent coordination, tool use
-- **Reinforcement Learning** — GRPO, DAPO, process reward models, RLHF
-- **Developer Tools** — MCP servers, CLI generators, API discovery, workflow automation
-- **Applied ML** — federated RL ([flower.ai contributor](https://github.com/lonexreb/flwr-frl-kit)), deep finance RL
+- **AI Agent Systems** — event-driven architectures, multi-agent coordination, tool use, autonomous coding agents
+- **Reinforcement Learning** — GRPO, DAPO, CISPO, process reward models, RLHF, hallucination scoring
+- **Developer Tools** — MCP servers, CLI generators, API discovery, workflow automation, agent harnesses
+- **Applied ML** — federated RL ([flower.ai contributor](https://github.com/lonexreb/flwr-frl-kit)), deep finance RL, chip design optimization
 - **Founder Performance** — biometric-driven agents, cognitive performance systems, gamified health optimization
 - **Health & Wellness AI** — agent templates for wearable data, sleep coaching, burnout detection
 - **F1 & Motorsport AI** — CFD-aware research assistants, aerodynamic optimization under FIA constraints, literature-to-simulation pipelines
-- **EdTech for Kids** — gamified learning apps for toddlers, math through card games
+- **EdTech** — emotion-aware tutoring, gamified learning apps for toddlers, math through card games
 
 ## 🛠️ Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=flat&logo=rust&logoColor=white)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-F05138?style=flat&logo=swift&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
 ![NATS](https://img.shields.io/badge/NATS-27AAE1?style=flat&logo=nats.io&logoColor=white)
 ![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat&logo=pydantic&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
