@@ -1,6 +1,6 @@
 # Hey, I'm Shubhankar 👋
 
-**Building Computer Vision infrastructure & AI-native Analytical tools at [Paloa Labs](https://paloa.ai) in Palo Alto, CA.**
+**Building Computer Vision infrastructure & AI-native Sports Analytical tools at [Paloa Labs](https://paloa.ai) in Palo Alto, CA.**
 
 I'm obsessed with making AI agents that actually work — event-driven systems, reinforcement learning from human feedback, and tools that turn messy real-world interfaces into clean APIs.
 
