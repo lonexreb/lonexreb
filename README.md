@@ -19,6 +19,8 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 | 🔄 [**mobius**](https://github.com/lonexreb/mobius) | High-performance framework for autonomous ML experimentation — Rust + Go + Python |
 | 🌟 [**morningstar**](https://github.com/lonexreb/morningstar) | Autonomous coding agent that turns Notion PRDs into working code — reads requirements, analyzes codebases, generates implementations with tests, commits & sends Slack progress updates. Powered by Claude Code |
 | 🧱 [**deepagents**](https://github.com/lonexreb/deepagents) | Batteries-included agent harness — LangChain + LangGraph with planning, filesystem ops, shell access, sub-agent spawning & auto-summarization. `pip install deepagents` |
+| 🐟 [**aish**](https://github.com/lonexreb/aish) | Claude Code plugin for the official Anthropic plugin marketplace — GPU cloud control plane (TensorDock + Modal MCP), GPU detection skills & ML workflow agents |
+| 🔭 [**compgit**](https://github.com/lonexreb/compgit) | GitHub commits, quietly visible — across Chrome, iPhone, and macOS |
 
 ### AI Agent Systems & RL
 
@@ -30,6 +32,8 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 | 🎓 [**university-sim**](https://github.com/lonexreb/university-sim) | Multi-agent university simulation benchmark with Concordia GM + OpenClaw coordination + emergence metrics |
 | 🌸 [**flwr-frl-kit**](https://github.com/lonexreb/flwr-frl-kit) | Federated RL Kit for [flower.ai](https://flower.ai) — contributing federated reinforcement learning to the Flower ecosystem |
 | 📈 [**DeepFinRL-UMass**](https://github.com/lonexreb/DeepFinRL-UMass) | Multi-agent RL for automated stock trading & personalized ETF curation — hierarchical MARL with Director Agent + specialist analysts, LLM sentiment, PPO/CPPO/GRPO algorithms |
+| 🔬 [**autoresearch**](https://github.com/lonexreb/autoresearch) | AI agents running research on single-GPU nanochat training automatically — bio/physics-inspired search loops (Lévy flights, Metropolis-Hastings, hippocampal replay, golden-angle sampling) for Karpathy's nanochat |
+| 🧮 [**claude-code-math-skills**](https://github.com/lonexreb/claude-code-math-skills) | Claude Code harness for rigorous math problems — 7-agent Generator–Critic loop, Lean 4 formalizer, SymPy verifier, 334-chunk Lebl analysis corpus, Putnam/IMO benchmark suite |
 
 ### F1 & Motorsport AI
 
@@ -72,6 +76,37 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 | 🃏 [**blackjack-for-toddler**](https://github.com/lonexreb/blackjack-for-toddler) | Toddler-friendly Blackjack that teaches numbers & addition — React PWA with Capacitor for iOS |
 | 🃏 [**poker-for-toddler**](https://github.com/lonexreb/poker-for-toddler) | Texas Hold'em for kids (ages 4-9) with toy cars, gems & crowns — React PWA on Vercel |
 | 🕉️ [**Mahamrutyunjay-Mantra-Counter**](https://github.com/lonexreb/Mahamrutyunjay-Mantra-Counter) | macOS desktop app for tracking Mahamrutyunjay Mantra chanting — voice detection, visual progress 1-108 |
+| 🇮🇳 [**xplncert**](https://github.com/lonexreb/xplncert) | Inventors themselves walk you through NCERT — AI persona videos for Indian class 6–12 textbooks |
+
+## 🌍 Open Source Contributions
+
+Shipping fixes, language support, and config improvements upstream — selected PRs:
+
+### [openclaw/openclaw](https://github.com/openclaw/openclaw) — agentic coding platform
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#74638`](https://github.com/openclaw/openclaw/pull/74638) | ✅ merged | Accept `browser.tabCleanup` keys in zod schema |
+| [`#74945`](https://github.com/openclaw/openclaw/pull/74945) | open | Canonicalize `--model` to lowercase before dispatch |
+| [`#74921`](https://github.com/openclaw/openclaw/pull/74921) | reviewed | Skip web tool discovery when surface is explicitly disabled |
+| [`#74891`](https://github.com/openclaw/openclaw/pull/74891) | open | Skip API-key prompt when user skipped installing the skill |
+| [`#74643`](https://github.com/openclaw/openclaw/pull/74643) | open | Per-agent `verboseDefault` and `elevatedDefault` config overrides |
+| [`#74627`](https://github.com/openclaw/openclaw/pull/74627) | reviewed | Clarify `modelFallback` semantics in deprecation warning |
+
+### [warpdotdev/warp](https://github.com/warpdotdev/warp) — agentic terminal
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#9558`](https://github.com/warpdotdev/warp/pull/9558) | ✅ merged | Align OSS `.desktop` `Exec` with packaged binary name |
+| [`#9563`](https://github.com/warpdotdev/warp/pull/9563) | ✅ merged | Attribute Alacritty/vte derivative code in two more files |
+| [`#9568`](https://github.com/warpdotdev/warp/pull/9568) | open | Add JSON language support via `vscode-json-languageserver` |
+| [`#9562`](https://github.com/warpdotdev/warp/pull/9562) | open | Add PHP language support via Intelephense LSP |
+| [`#9560`](https://github.com/warpdotdev/warp/pull/9560) | open | Strip linked-worktree `+` marker from branch picker |
+
+### Also contributing to
+
+- [karpathy/autoresearch](https://github.com/karpathy/autoresearch) — bio/physics-inspired search strategies (Lévy flights, Metropolis-Hastings, golden-angle sampling, hippocampal replay) for the nanochat training loop
+- [ourresearch/openalex-overview](https://github.com/ourresearch/openalex-overview) — OpenAlex architecture diagram generation script
 
 ## 🧠 Areas of Focus
 
