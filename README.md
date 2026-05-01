@@ -104,6 +104,8 @@ Shipping fixes, language support, and config improvements upstream — selected 
 
 ### [warpdotdev/warp](https://github.com/warpdotdev/warp) — agentic terminal
 
+📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/5e15a6a19988926f0f0fc79808d72971)**
+
 | PR | Status | What it does |
 |---|---|---|
 | [`#9558`](https://github.com/warpdotdev/warp/pull/9558) | ✅ merged | Align OSS `.desktop` `Exec` with packaged binary name |
