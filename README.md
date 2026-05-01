@@ -84,6 +84,8 @@ Shipping fixes, language support, and config improvements upstream — selected 
 
 ### [openclaw/openclaw](https://github.com/openclaw/openclaw) — agentic coding platform
 
+📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/fb73a4f67bc011beede2f4dc1be252a4)**
+
 | PR | Status | What it does |
 |---|---|---|
 | [`#74638`](https://github.com/openclaw/openclaw/pull/74638) | ✅ merged | Accept `browser.tabCleanup` keys in zod schema |
