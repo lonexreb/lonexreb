@@ -87,6 +87,10 @@ Shipping fixes, language support, and config improvements upstream — selected 
 | PR | Status | What it does |
 |---|---|---|
 | [`#74638`](https://github.com/openclaw/openclaw/pull/74638) | ✅ merged | Accept `browser.tabCleanup` keys in zod schema |
+| [`#75339`](https://github.com/openclaw/openclaw/pull/75339) | open | Normalize structured `delta.content` blocks to prevent `[object Object]` in chat replies |
+| [`#75248`](https://github.com/openclaw/openclaw/pull/75248) | open | Reorder workspace `AGENTS.md` template so load-bearing rules come first |
+| [`#75217`](https://github.com/openclaw/openclaw/pull/75217) | open | Honor `skipBootstrap` at the runtime injection path |
+| [`#75210`](https://github.com/openclaw/openclaw/pull/75210) | reviewed | Honor `OPENCLAW_STATE_DIR` for `exec-approvals.json` |
 | [`#74945`](https://github.com/openclaw/openclaw/pull/74945) | open | Canonicalize `--model` to lowercase before dispatch |
 | [`#74921`](https://github.com/openclaw/openclaw/pull/74921) | reviewed | Skip web tool discovery when surface is explicitly disabled |
 | [`#74891`](https://github.com/openclaw/openclaw/pull/74891) | open | Skip API-key prompt when user skipped installing the skill |
@@ -102,6 +106,10 @@ Shipping fixes, language support, and config improvements upstream — selected 
 | [`#9568`](https://github.com/warpdotdev/warp/pull/9568) | open | Add JSON language support via `vscode-json-languageserver` |
 | [`#9562`](https://github.com/warpdotdev/warp/pull/9562) | open | Add PHP language support via Intelephense LSP |
 | [`#9560`](https://github.com/warpdotdev/warp/pull/9560) | open | Strip linked-worktree `+` marker from branch picker |
+| [`#9667`](https://github.com/warpdotdev/warp/pull/9667) | open | Recognize Mistral Vibe as a CLI agent |
+| [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | open | Fail fast on bootstrap when Node.js / yarn are missing |
+| [`#9670`](https://github.com/warpdotdev/warp/pull/9670) | open | Route `CLIAgent::Pi` to the default session listener |
+| [`#9671`](https://github.com/warpdotdev/warp/pull/9671) | open | Clear permission-scoped state when leaving the permission flow |
 
 ### Also contributing to
 
