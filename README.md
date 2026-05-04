@@ -82,6 +82,20 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 
 Shipping fixes, language support, and config improvements upstream — selected PRs:
 
+### 🌟 Featured: [NVlabs/alpamayo](https://github.com/NVlabs/alpamayo) — NVIDIA's open foundational driving model (Physical AI / AV)
+
+**Currently the most recent external contributor** — 7 of the last 8 community PRs to the repo are mine, hardening the public-facing surface (input validation, error UX, attention-impl correctness, and onboarding docs) of NVIDIA's open foundational driving model.
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#73`](https://github.com/NVlabs/alpamayo/pull/73) | ✅ merged | Replace `assert` with `ValueError` in `load_physical_aiavdataset()` so input validation survives `python -O` |
+| [`#74`](https://github.com/NVlabs/alpamayo/pull/74) | open | Show actionable error when HuggingFace dataset access is missing — surface gated-repo / 401 / 403 cases instead of confusing `IndexError` (fixes #59, #61) |
+| [`#75`](https://github.com/NVlabs/alpamayo/pull/75) | open | Pin expert decoder to SDPA so the model loads when Flash-Attention 2 is globally enabled (fixes #52) |
+| [`#76`](https://github.com/NVlabs/alpamayo/pull/76) | open | Clarify coordinate-frame conventions for `project_waypoints_ftheta` (refs #34) |
+| [`#77`](https://github.com/NVlabs/alpamayo/pull/77) | open | Replace `assert` with `ValueError` across public-API input validation |
+| [`#78`](https://github.com/NVlabs/alpamayo/pull/78) | open | Remove deprecated `local_dir_use_symlinks` arg from `snapshot_download()` call |
+| [`#79`](https://github.com/NVlabs/alpamayo/pull/79) | open | Expand Troubleshooting with HF auth, FA2 `cu_seqlens`, and smoke tests for first-time users |
+
 ### [openclaw/openclaw](https://github.com/openclaw/openclaw) — agentic coding platform
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/fb73a4f67bc011beede2f4dc1be252a4)**
@@ -118,20 +132,6 @@ Shipping fixes, language support, and config improvements upstream — selected 
 | [`#9667`](https://github.com/warpdotdev/warp/pull/9667) | open | Recognize Mistral Vibe as a CLI agent |
 | [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | open | Fail fast on bootstrap when Node.js / yarn are missing |
 | [`#9671`](https://github.com/warpdotdev/warp/pull/9671) | open | Clear permission-scoped state when leaving the permission flow |
-
-### [NVlabs/alpamayo](https://github.com/NVlabs/alpamayo) — NVIDIA's open foundational driving model (Physical AI / AV)
-
-Hardening the public-facing surface — input validation, error UX, attention-impl correctness, and onboarding docs.
-
-| PR | Status | What it does |
-|---|---|---|
-| [`#73`](https://github.com/NVlabs/alpamayo/pull/73) | ✅ merged | Replace `assert` with `ValueError` in `load_physical_aiavdataset()` so input validation survives `python -O` |
-| [`#74`](https://github.com/NVlabs/alpamayo/pull/74) | open | Show actionable error when HuggingFace dataset access is missing — surface gated-repo / 401 / 403 cases instead of confusing `IndexError` (fixes #59, #61) |
-| [`#75`](https://github.com/NVlabs/alpamayo/pull/75) | open | Pin expert decoder to SDPA so the model loads when Flash-Attention 2 is globally enabled (fixes #52) |
-| [`#76`](https://github.com/NVlabs/alpamayo/pull/76) | open | Clarify coordinate-frame conventions for `project_waypoints_ftheta` (refs #34) |
-| [`#77`](https://github.com/NVlabs/alpamayo/pull/77) | open | Replace `assert` with `ValueError` across public-API input validation |
-| [`#78`](https://github.com/NVlabs/alpamayo/pull/78) | open | Remove deprecated `local_dir_use_symlinks` arg from `snapshot_download()` call |
-| [`#79`](https://github.com/NVlabs/alpamayo/pull/79) | open | Expand Troubleshooting with HF auth, FA2 `cu_seqlens`, and smoke tests for first-time users |
 
 ### Also contributing to
 
