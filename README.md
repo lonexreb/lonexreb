@@ -152,6 +152,13 @@ Shipping fixes, language support, and config improvements upstream — selected 
 | [`#74891`](https://github.com/openclaw/openclaw/pull/74891) | open | Skip API-key prompt when user skipped installing the skill |
 | [`#74643`](https://github.com/openclaw/openclaw/pull/74643) | open | Per-agent `verboseDefault` and `elevatedDefault` config overrides |
 | [`#74627`](https://github.com/openclaw/openclaw/pull/74627) | reviewed | Clarify `modelFallback` semantics in deprecation warning |
+| [`#77184`](https://github.com/openclaw/openclaw/pull/77184) | open | Re-export `StatusSummary`, `SessionStatus`, `HeartbeatStatus` from plugin-sdk |
+| [`#77189`](https://github.com/openclaw/openclaw/pull/77189) | reviewed | Downgrade expected 1013 "gateway starting" close-before-connect log to debug |
+| [`#77191`](https://github.com/openclaw/openclaw/pull/77191) | reviewed | Optional `agentId` filter on `cron.list` with default-agent fallback |
+| [`#77197`](https://github.com/openclaw/openclaw/pull/77197) | open | Surface sharp-install hint when image optimizer exhausts every resize attempt |
+| [`#77215`](https://github.com/openclaw/openclaw/pull/77215) | reviewed | Document Realtime Talk requires OpenAI Platform credits, not Codex subscription |
+| [`#77217`](https://github.com/openclaw/openclaw/pull/77217) | open | Reserve `safe-area-inset-bottom` on sticky chat compose for iOS PWA |
+| [`#77224`](https://github.com/openclaw/openclaw/pull/77224) | reviewed | Document BlueBubbles channel-vs-plugin disablement layers + safe loopback config |
 
 ### [warpdotdev/warp](https://github.com/warpdotdev/warp) — agentic terminal
 
