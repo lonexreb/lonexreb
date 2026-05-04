@@ -84,17 +84,54 @@ Shipping fixes, language support, and config improvements upstream — selected 
 
 ### 🌟 Featured: [NVlabs/alpamayo](https://github.com/NVlabs/alpamayo) — NVIDIA's open foundational driving model (Physical AI / AV)
 
-**Currently the most recent external contributor** — 7 of the last 8 community PRs to the repo are mine, hardening the public-facing surface (input validation, error UX, attention-impl correctness, and onboarding docs) of NVIDIA's open foundational driving model.
+**The last 22 consecutive PRs to the repo are mine** (1 merged, 21 in review) — a sustained sprint hardening NVIDIA's open foundational driving model across input validation, runtime/attention correctness, type annotations, regression tests, docstring-vs-code drift, and first-run onboarding.
+
+#### Validation & input handling
 
 | PR | Status | What it does |
 |---|---|---|
 | [`#73`](https://github.com/NVlabs/alpamayo/pull/73) | ✅ merged | Replace `assert` with `ValueError` in `load_physical_aiavdataset()` so input validation survives `python -O` |
-| [`#74`](https://github.com/NVlabs/alpamayo/pull/74) | open | Show actionable error when HuggingFace dataset access is missing — surface gated-repo / 401 / 403 cases instead of confusing `IndexError` (fixes #59, #61) |
-| [`#75`](https://github.com/NVlabs/alpamayo/pull/75) | open | Pin expert decoder to SDPA so the model loads when Flash-Attention 2 is globally enabled (fixes #52) |
-| [`#76`](https://github.com/NVlabs/alpamayo/pull/76) | open | Clarify coordinate-frame conventions for `project_waypoints_ftheta` (refs #34) |
+| [`#74`](https://github.com/NVlabs/alpamayo/pull/74) | open | Actionable HuggingFace dataset-access errors — surface gated-repo / 401 / 403 instead of confusing `IndexError` (fixes #59, #61) |
 | [`#77`](https://github.com/NVlabs/alpamayo/pull/77) | open | Replace `assert` with `ValueError` across public-API input validation |
+| [`#84`](https://github.com/NVlabs/alpamayo/pull/84) | open | Replace mutable default list with `None` sentinel in `basic_collation_fn` |
+| [`#94`](https://github.com/NVlabs/alpamayo/pull/94) | open | Replace `assert`s with `ValueError` in `chat_template/conversation.py` |
+
+#### Runtime & compatibility
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#75`](https://github.com/NVlabs/alpamayo/pull/75) | open | Pin expert decoder to SDPA so the model loads when Flash-Attention 2 is globally enabled (fixes #52) |
 | [`#78`](https://github.com/NVlabs/alpamayo/pull/78) | open | Remove deprecated `local_dir_use_symlinks` arg from `snapshot_download()` call |
+| [`#80`](https://github.com/NVlabs/alpamayo/pull/80) | open | Preserve integer/bool tensor dtype in `to_device()` (fixes #36) |
+
+#### Type annotations & API contracts
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#85`](https://github.com/NVlabs/alpamayo/pull/85) | open | Fix `get_label_mask` docstrings and `get_assistant_mask` return type |
+| [`#89`](https://github.com/NVlabs/alpamayo/pull/89) | open | Document exclusive-end `chunk_ids` range and broaden type annotation in `pai_utils` |
+| [`#92`](https://github.com/NVlabs/alpamayo/pull/92) | open | Fix `MetricRunner.run()` return-type annotation and document its side effect |
+
+#### Docs & docstring sync
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#76`](https://github.com/NVlabs/alpamayo/pull/76) | open | Clarify coordinate-frame conventions for `project_waypoints_ftheta` (refs #34) |
 | [`#79`](https://github.com/NVlabs/alpamayo/pull/79) | open | Expand Troubleshooting with HF auth, FA2 `cu_seqlens`, and smoke tests for first-time users |
+| [`#82`](https://github.com/NVlabs/alpamayo/pull/82) | open | Sync README project-structure tree with on-disk layout |
+| [`#83`](https://github.com/NVlabs/alpamayo/pull/83) | open | Sync `load_physical_aiavdataset` docstring with the code |
+| [`#86`](https://github.com/NVlabs/alpamayo/pull/86) | open | Sync metric docstrings with the keys actually returned |
+| [`#87`](https://github.com/NVlabs/alpamayo/pull/87) | open | Document exclusive-end `--chunk` range in `curate_pai_samples.py` |
+| [`#93`](https://github.com/NVlabs/alpamayo/pull/93) | open | Sync `DistanceMetrics` docstrings with the actual signature and returns |
+
+#### Tests & DX
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#81`](https://github.com/NVlabs/alpamayo/pull/81) | open | Accept multiple `--chunk-ids` without quoting in `download_pai.py` |
+| [`#88`](https://github.com/NVlabs/alpamayo/pull/88) | open | Remove commented-out debug print in `QwenProcessor._preprocess_data` |
+| [`#90`](https://github.com/NVlabs/alpamayo/pull/90) | open | Add regression tests for `basic_collation_fn` and `get_assistant_mask` |
+| [`#91`](https://github.com/NVlabs/alpamayo/pull/91) | open | Add regression tests for `compute_minade` and `summarize_metric` keys |
 
 ### [openclaw/openclaw](https://github.com/openclaw/openclaw) — agentic coding platform
 
