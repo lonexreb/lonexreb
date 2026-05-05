@@ -267,7 +267,7 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 
 ## 📫 Find Me
 
-[![Portfolio](https://img.shields.io/badge/shubhankar--tripathy.vercel.app-000?style=flat&logo=safari&logoColor=white)](https://tripathy.ai)
+[![Portfolio](https://img.shields.io/badge/tripathy.ai-000?style=flat&logo=safari&logoColor=white)](https://tripathy.ai)
 [![Zigsaw](https://img.shields.io/badge/zigsaw.dev-000?style=flat&logo=safari&logoColor=white)](https://zigsaw.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/shubhankar-tripathy)
 
