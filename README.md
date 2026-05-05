@@ -124,8 +124,7 @@
 
 Shipping fixes, tests, and ergonomics upstream across NVIDIA's open AV / RL / training stack, agentic tooling, and terminal infra — selected PRs:
 
-<details open>
-<summary><h3>🌟 Featured: <a href="https://github.com/NVlabs/alpamayo">NVlabs/alpamayo</a> — NVIDIA's open foundational driving model (Physical AI / AV) <em>(31 PRs)</em></h3></summary>
+### 🌟 Featured: <a href="https://github.com/NVlabs/alpamayo">NVlabs/alpamayo</a> — NVIDIA's open foundational driving model (Physical AI / AV) <em>(31 PRs)</em>
 
 **The last 31 consecutive PRs to the repo are mine** (1 merged, 30 in review) — a sustained sprint hardening NVIDIA's open foundational driving model across input validation, runtime/attention correctness, type annotations, evaluation metrics, regression tests, docstring-vs-code drift, and first-run onboarding.
 
@@ -190,10 +189,7 @@ Shipping fixes, tests, and ergonomics upstream across NVIDIA's open AV / RL / tr
 | [`#100`](https://github.com/NVlabs/alpamayo/pull/100) | open | Add CLI flags to `test_inference.py` without changing default behavior |
 | [`#103`](https://github.com/NVlabs/alpamayo/pull/103) | open | Add `python -m alpamayo_r1.healthcheck` install smoke test |
 
-</details>
-
-<details>
-<summary><h3><a href="https://github.com/NVIDIA-NeMo/RL">NVIDIA-NeMo/RL</a> — NVIDIA's RL framework for LLM post-training (GRPO, DAPO, Megatron) <em>(9 PRs)</em></h3></summary>
+### <a href="https://github.com/NVIDIA-NeMo/RL">NVIDIA-NeMo/RL</a> — NVIDIA's RL framework for LLM post-training (GRPO, DAPO, Megatron) <em>(9 PRs)</em>
 
 Production-grade error handling, configuration ergonomics, and test coverage for the GRPO / Megatron training loop.
 
@@ -209,10 +205,7 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#2388`](https://github.com/NVIDIA-NeMo/RL/pull/2388) | open | Bump `accelerate` floor to 1.1.0 for `transformers` 5.3.0 compat |
 | [`#2387`](https://github.com/NVIDIA-NeMo/RL/pull/2387) | open | Test coverage for converter CLI entry points |
 
-</details>
-
-<details>
-<summary><h3><a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(8 PRs · 4 approved)</em></h3></summary>
+### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(8 PRs · 4 approved)</em>
 
 **4 PRs maintainer-approved** — test coverage and observability across VLM / audio recipes, plus data-pipeline and TB-memory-aggregation fixes.
 
@@ -227,10 +220,7 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#3652`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3652) | open | Unit tests for `CometPlugin` |
 | [`#3650`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3650) | open | Unit tests for `pg_utils` helpers |
 
-</details>
-
-<details>
-<summary><h3><a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(18 PRs · 2 merged)</em></h3></summary>
+### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(18 PRs · 2 merged)</em>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/fb73a4f67bc011beede2f4dc1be252a4)**
 
@@ -255,10 +245,7 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#77217`](https://github.com/openclaw/openclaw/pull/77217) | open | Reserve `safe-area-inset-bottom` on sticky chat compose for iOS PWA |
 | [`#77224`](https://github.com/openclaw/openclaw/pull/77224) | reviewed | Document BlueBubbles channel-vs-plugin disablement layers + safe loopback config |
 
-</details>
-
-<details>
-<summary><h3><a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(18 PRs · 4 merged)</em></h3></summary>
+### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(18 PRs · 4 merged)</em>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/5e15a6a19988926f0f0fc79808d72971)**
 
@@ -283,15 +270,10 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | open | Fail fast on bootstrap when Node.js / yarn are missing (#9544) |
 | [`#9560`](https://github.com/warpdotdev/warp/pull/9560) | open | Strip linked-worktree `+` marker from branch picker (#9170) |
 
-</details>
-
-<details>
-<summary><h3>Also contributing to</h3></summary>
+### Also contributing to
 
 - [karpathy/autoresearch](https://github.com/karpathy/autoresearch) — bio/physics-inspired search strategies (Lévy flights, Metropolis-Hastings, golden-angle sampling, hippocampal replay) for the nanochat training loop
 - [ourresearch/openalex-overview](https://github.com/ourresearch/openalex-overview) — OpenAlex architecture diagram generation script
-
-</details>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
 
