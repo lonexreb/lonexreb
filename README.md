@@ -184,19 +184,17 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 
 | PR | Status | What it does |
 |---|---|---|
+| [`#77446`](https://github.com/openclaw/openclaw/pull/77446) | ✅ merged | Pin container-side workspace and config dirs in `docker compose` |
 | [`#74638`](https://github.com/openclaw/openclaw/pull/74638) | ✅ merged | Accept `browser.tabCleanup` keys in zod schema |
+| [`#77367`](https://github.com/openclaw/openclaw/pull/77367) | open | Scope Discord `command-deploy` cache by application id (multi-tenant isolation, 3 regression tests) |
 | [`#75476`](https://github.com/openclaw/openclaw/pull/75476) | open | Honor `model.compat.unsupportedToolSchemaKeywords` for OpenAI-completions tool schemas |
 | [`#75445`](https://github.com/openclaw/openclaw/pull/75445) | open | Tolerate unresolved `SecretRef` tokens during Discord/Telegram channel-actions discovery |
-| [`#75425`](https://github.com/openclaw/openclaw/pull/75425) | reviewed | Fall back to `qrcode/lib` subpath when bare specifier fails to resolve |
 | [`#75339`](https://github.com/openclaw/openclaw/pull/75339) | open | Normalize structured `delta.content` blocks to prevent `[object Object]` in chat replies |
 | [`#75248`](https://github.com/openclaw/openclaw/pull/75248) | open | Reorder workspace `AGENTS.md` template so load-bearing rules come first |
 | [`#75217`](https://github.com/openclaw/openclaw/pull/75217) | open | Honor `skipBootstrap` at the runtime injection path |
-| [`#75210`](https://github.com/openclaw/openclaw/pull/75210) | reviewed | Honor `OPENCLAW_STATE_DIR` for `exec-approvals.json` |
 | [`#74945`](https://github.com/openclaw/openclaw/pull/74945) | open | Canonicalize `--model` to lowercase before dispatch |
-| [`#74921`](https://github.com/openclaw/openclaw/pull/74921) | reviewed | Skip web tool discovery when surface is explicitly disabled |
 | [`#74891`](https://github.com/openclaw/openclaw/pull/74891) | open | Skip API-key prompt when user skipped installing the skill |
 | [`#74643`](https://github.com/openclaw/openclaw/pull/74643) | open | Per-agent `verboseDefault` and `elevatedDefault` config overrides |
-| [`#74627`](https://github.com/openclaw/openclaw/pull/74627) | reviewed | Clarify `modelFallback` semantics in deprecation warning |
 | [`#77184`](https://github.com/openclaw/openclaw/pull/77184) | open | Re-export `StatusSummary`, `SessionStatus`, `HeartbeatStatus` from plugin-sdk |
 | [`#77189`](https://github.com/openclaw/openclaw/pull/77189) | reviewed | Downgrade expected 1013 "gateway starting" close-before-connect log to debug |
 | [`#77191`](https://github.com/openclaw/openclaw/pull/77191) | reviewed | Optional `agentId` filter on `cron.list` with default-agent fallback |
