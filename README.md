@@ -1,10 +1,58 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6366F1,100:06B6D4&height=200&section=header&text=Shubhankar%20Tripathy&fontSize=46&fontColor=ffffff&fontAlignY=36&desc=Computer%20Vision%20%2B%20AI%20Agents%20%40%20Paloa%20Labs%20%E2%80%94%20Palo%20Alto%2C%20CA&descSize=16&descAlignY=58&descColor=ffffff&animation=fadeIn" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=200&section=header&text=Shubhankar%20Tripathy&fontSize=46&fontColor=ffffff&fontAlignY=36&desc=Computer%20Vision%20%2B%20AI%20Agents%20%40%20Paloa%20Labs%20%E2%80%94%20Palo%20Alto%2C%20CA&descSize=16&descAlignY=58&descColor=ffffff&fontName=Source%20Sans%20Pro&animation=fadeIn" width="100%" />
 
 📍 **Palo Alto** | 🎥 **CV infra + AI-native sports analytics @ [Paloa Labs](https://paloa.ai)** | 🤖 **Agent-native engineering**
 
 > Building agents that actually work — event-driven systems, RL from human feedback, and tools that turn messy real-world interfaces into clean APIs. Currently the most recent external contributor to NVIDIA's Alpamayo (31 consecutive PRs, 1 merged).
 
 [![Skills](https://skillicons.dev/icons?i=py,ts,rust,go,swift,react,fastapi,pytorch,docker,postgres,nextjs,supabase,mongodb&perline=13)](https://skillicons.dev)
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
+
+## 🏆 Merged Contributions
+
+<table>
+<tr>
+<td align="center" width="33%">
+<img src="https://img.shields.io/badge/Merged-7-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" alt="Merged PRs" /><br/>
+<sub><b>shipped upstream</b></sub>
+</td>
+<td align="center" width="33%">
+<img src="https://img.shields.io/badge/Approved-4-1F2937?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=000000" alt="Approved PRs" /><br/>
+<sub><b>awaiting merge</b></sub>
+</td>
+<td align="center" width="33%">
+<img src="https://img.shields.io/badge/Open-50%2B-374151?style=for-the-badge&logo=git&logoColor=white&labelColor=000000" alt="Open PRs" /><br/>
+<sub><b>in active review</b></sub>
+</td>
+</tr>
+</table>
+
+| # | PR | Repo | What |
+|---|---|---|---|
+| 1 | [`alpamayo#73`](https://github.com/NVlabs/alpamayo/pull/73) | NVlabs/alpamayo | Replace `assert` with `ValueError` so input validation survives `python -O` |
+| 2 | [`openclaw#77446`](https://github.com/openclaw/openclaw/pull/77446) | openclaw/openclaw | Pin container-side workspace and config dirs in `docker compose` |
+| 3 | [`openclaw#74638`](https://github.com/openclaw/openclaw/pull/74638) | openclaw/openclaw | Accept `browser.tabCleanup` keys in zod schema |
+| 4 | [`warp#9558`](https://github.com/warpdotdev/warp/pull/9558) | warpdotdev/warp | Align OSS `.desktop` `Exec` with packaged binary name |
+| 5 | [`warp#9563`](https://github.com/warpdotdev/warp/pull/9563) | warpdotdev/warp | Attribute Alacritty/vte derivative code in two more files |
+| 6 | [`warp#9667`](https://github.com/warpdotdev/warp/pull/9667) | warpdotdev/warp | Recognize Mistral Vibe as a CLI agent |
+| 7 | [`warp#9670`](https://github.com/warpdotdev/warp/pull/9670) | warpdotdev/warp | Route `CLIAgent::Pi` to the default session listener |
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
+
+## 📊 GitHub Presence
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=lonexreb&show_icons=true&theme=dark&bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=ffffff&hide_border=true" height="170" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lonexreb&theme=dark&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&hide_border=true" height="170" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=lonexreb&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&area_color=ffffff&hide_border=true" width="100%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lonexreb&layout=compact&theme=dark&bg_color=000000&title_color=ffffff&text_color=ffffff&hide_border=true&langs_count=10" height="160" />
+</p>
 
 ## 🔨 What I'm Building
 
@@ -66,13 +114,14 @@
 - 🕉️ **[Mahamrutyunjay-Mantra-Counter](https://github.com/lonexreb/Mahamrutyunjay-Mantra-Counter)** — macOS app for tracking mantra chanting via voice detection. 1–108 visual progress.
 - 🇮🇳 **[xplncert](https://github.com/lonexreb/xplncert)** — Inventors walk you through NCERT — AI persona videos for Indian class 6–12 textbooks.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366F1,100:06B6D4&height=2" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
 
 ## 🌍 Open Source Contributions
 
 Shipping fixes, tests, and ergonomics upstream across NVIDIA's open AV / RL / training stack, agentic tooling, and terminal infra — selected PRs:
 
-### 🌟 Featured: [NVlabs/alpamayo](https://github.com/NVlabs/alpamayo) — NVIDIA's open foundational driving model (Physical AI / AV)
+<details open>
+<summary><h3>🌟 Featured: <a href="https://github.com/NVlabs/alpamayo">NVlabs/alpamayo</a> — NVIDIA's open foundational driving model (Physical AI / AV) <em>(31 PRs)</em></h3></summary>
 
 **The last 31 consecutive PRs to the repo are mine** (1 merged, 30 in review) — a sustained sprint hardening NVIDIA's open foundational driving model across input validation, runtime/attention correctness, type annotations, evaluation metrics, regression tests, docstring-vs-code drift, and first-run onboarding.
 
@@ -137,7 +186,10 @@ Shipping fixes, tests, and ergonomics upstream across NVIDIA's open AV / RL / tr
 | [`#100`](https://github.com/NVlabs/alpamayo/pull/100) | open | Add CLI flags to `test_inference.py` without changing default behavior |
 | [`#103`](https://github.com/NVlabs/alpamayo/pull/103) | open | Add `python -m alpamayo_r1.healthcheck` install smoke test |
 
-### [NVIDIA-NeMo/RL](https://github.com/NVIDIA-NeMo/RL) — NVIDIA's RL framework for LLM post-training (GRPO, DAPO, Megatron)
+</details>
+
+<details>
+<summary><h3><a href="https://github.com/NVIDIA-NeMo/RL">NVIDIA-NeMo/RL</a> — NVIDIA's RL framework for LLM post-training (GRPO, DAPO, Megatron) <em>(9 PRs)</em></h3></summary>
 
 Production-grade error handling, configuration ergonomics, and test coverage for the GRPO / Megatron training loop.
 
@@ -153,7 +205,10 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#2388`](https://github.com/NVIDIA-NeMo/RL/pull/2388) | open | Bump `accelerate` floor to 1.1.0 for `transformers` 5.3.0 compat |
 | [`#2387`](https://github.com/NVIDIA-NeMo/RL/pull/2387) | open | Test coverage for converter CLI entry points |
 
-### [NVIDIA-NeMo/Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) — NVIDIA's bridge between Megatron-LM and NeMo training recipes
+</details>
+
+<details>
+<summary><h3><a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(8 PRs · 4 approved)</em></h3></summary>
 
 **4 PRs maintainer-approved** — test coverage and observability across VLM / audio recipes, plus data-pipeline and TB-memory-aggregation fixes.
 
@@ -168,7 +223,10 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#3652`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3652) | open | Unit tests for `CometPlugin` |
 | [`#3650`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3650) | open | Unit tests for `pg_utils` helpers |
 
-### [openclaw/openclaw](https://github.com/openclaw/openclaw) — agentic coding platform
+</details>
+
+<details>
+<summary><h3><a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(18 PRs · 2 merged)</em></h3></summary>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/fb73a4f67bc011beede2f4dc1be252a4)**
 
@@ -193,7 +251,10 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#77217`](https://github.com/openclaw/openclaw/pull/77217) | open | Reserve `safe-area-inset-bottom` on sticky chat compose for iOS PWA |
 | [`#77224`](https://github.com/openclaw/openclaw/pull/77224) | reviewed | Document BlueBubbles channel-vs-plugin disablement layers + safe loopback config |
 
-### [warpdotdev/warp](https://github.com/warpdotdev/warp) — agentic terminal
+</details>
+
+<details>
+<summary><h3><a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(18 PRs · 4 merged)</em></h3></summary>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/5e15a6a19988926f0f0fc79808d72971)**
 
@@ -218,14 +279,19 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | open | Fail fast on bootstrap when Node.js / yarn are missing (#9544) |
 | [`#9560`](https://github.com/warpdotdev/warp/pull/9560) | open | Strip linked-worktree `+` marker from branch picker (#9170) |
 
-### Also contributing to
+</details>
+
+<details>
+<summary><h3>Also contributing to</h3></summary>
 
 - [karpathy/autoresearch](https://github.com/karpathy/autoresearch) — bio/physics-inspired search strategies (Lévy flights, Metropolis-Hastings, golden-angle sampling, hippocampal replay) for the nanochat training loop
 - [ourresearch/openalex-overview](https://github.com/ourresearch/openalex-overview) — OpenAlex architecture diagram generation script
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366F1,100:06B6D4&height=2" width="100%" />
+</details>
 
-## 🎯 What I'm Doing
+<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
+
+## 🎯 Area of Focus
 
 - **Living in agent-native engineering** — Every project I ship has agents reading the diff, writing the patches, and arguing with each other before humans see it.
 - **Operating sustained PR sprints upstream** — 31 consecutive PRs to NVIDIA's Alpamayo in 4 days; clearing external review at YC-backed companies under bot-driven review pipelines.
@@ -234,7 +300,7 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 - **Federated learning contributor** — [flower.ai](https://flower.ai) ecosystem via [flwr-frl-kit](https://github.com/lonexreb/flwr-frl-kit).
 - **Building the [Zigsaw](https://zigsaw.dev) AI workflow platform** — chat or drag-and-drop to ship multi-LLM workflows as APIs.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=0:6366F1,100:06B6D4&height=2" width="100%" />
+<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
 
 ## 📫 Connect
 
