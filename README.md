@@ -1,6 +1,10 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=200&section=header&text=Shubhankar%20Tripathy&fontSize=46&fontColor=ffffff&fontAlignY=36&desc=Computer%20Vision%20%2B%20AI%20Agents%20%40%20Paloa%20Labs%20%E2%80%94%20Palo%20Alto%2C%20CA&descSize=16&descAlignY=58&descColor=ffffff&fontName=Source%20Sans%20Pro&animation=fadeIn" width="100%" />
+<p align="center">
+  <img src="./assets/banner.png" alt="Tripathy — Think · Build · Elevate" width="100%" />
+</p>
 
-📍 **Palo Alto** | 🎥 **CV infra + AI-native sports analytics @ [Paloa Labs](https://paloa.ai)** | 🤖 **Agent-native engineering**
+<p align="center">
+  📍 <b>Palo Alto</b> &nbsp;·&nbsp; 🎥 <b>CV infra + AI-native sports analytics @ <a href="https://paloa.ai">Paloa Labs</a></b> &nbsp;·&nbsp; 🤖 <b>Agent-native engineering</b>
+</p>
 
 > Building agents that actually work — event-driven systems, RL from human feedback, and tools that turn messy real-world interfaces into clean APIs. Currently the most recent external contributor to NVIDIA's Alpamayo (31 consecutive PRs, 1 merged).
 
