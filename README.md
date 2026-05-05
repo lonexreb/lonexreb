@@ -2,17 +2,27 @@
   <img src="./assets/banner.png" alt="Tripathy — Think · Build · Elevate" width="100%" />
 </p>
 
+<div align="center">
+
+`a digital monk in the AI-native present`
+
+[Palo Alto](https://tripathy.ai) · [Paloa Labs](https://paloa.ai) · [Zigsaw](https://zigsaw.dev) · [tripathy.ai](https://tripathy.ai)
+
+</div>
+
+> a decade of code; now agents read the diff, write the patch,
+> and argue with each other before humans see it.
+>
+> currently the most recent external contributor to NVIDIA's Alpamayo —
+> 31 consecutive PRs, sustained over four days.
+
 <p align="center">
-  📍 <b>Palo Alto</b> &nbsp;·&nbsp; 🎥 <b>CV infra + AI-native sports analytics @ <a href="https://paloa.ai">Paloa Labs</a></b> &nbsp;·&nbsp; 🤖 <b>Agent-native engineering</b>
+  <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=py,ts,rust,go,swift,react,fastapi,pytorch,docker,postgres,nextjs,supabase,mongodb&perline=13" alt="stack" /></a>
 </p>
 
-> Building agents that actually work — event-driven systems, RL from human feedback, and tools that turn messy real-world interfaces into clean APIs. Currently the most recent external contributor to NVIDIA's Alpamayo (31 consecutive PRs, 1 merged).
+<div align="center"><sub>·  ·  ·</sub></div>
 
-[![Skills](https://skillicons.dev/icons?i=py,ts,rust,go,swift,react,fastapi,pytorch,docker,postgres,nextjs,supabase,mongodb&perline=13)](https://skillicons.dev)
-
-<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
-
-## 🏆 Merged Contributions
+## ◉  shipped
 
 <table>
 <tr>
@@ -42,9 +52,9 @@
 | 7 | [`warp#9670`](https://github.com/warpdotdev/warp/pull/9670) | warpdotdev/warp | Route `CLIAgent::Pi` to the default session listener |
 | 8 | [`Megatron-Bridge#3649`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3649) | NVIDIA-NeMo/Megatron-Bridge | Add NVIDIA copyright headers to four package `__init__.py` files |
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
+<div align="center"><sub>·  ·  ·</sub></div>
 
-## 📊 2026 YTD
+## ◉  the year so far
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=lonexreb&theme=dark&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&hide_border=true&starting_year=2026" height="170" alt="GitHub streak — 2026 YTD" />
@@ -66,7 +76,7 @@ Rust                                        1.2%
 1,023 commits  ·  5 languages  ·  30 active repos
 ```
 
-## 🔨 What I'm Building
+## ◉  building
 
 ### Developer Tools & Platforms
 
@@ -126,11 +136,11 @@ Rust                                        1.2%
 - 🕉️ **[Mahamrutyunjay-Mantra-Counter](https://github.com/lonexreb/Mahamrutyunjay-Mantra-Counter)** — macOS app for tracking mantra chanting via voice detection. 1–108 visual progress.
 - 🇮🇳 **[xplncert](https://github.com/lonexreb/xplncert)** — Inventors walk you through NCERT — AI persona videos for Indian class 6–12 textbooks.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
+<div align="center"><sub>·  ·  ·</sub></div>
 
-## 🌍 Open Source Contributions
+## ◉  upstream
 
-Shipping fixes, tests, and ergonomics upstream across NVIDIA's open AV / RL / training stack, agentic tooling, and terminal infra — selected PRs:
+when the model is stuck, you can either complain or send a patch. i've been sending patches — across NVIDIA's open AV / RL / training stack, the agentic tooling layer, and the terminal layer.
 
 ### 🌟 Featured: <a href="https://github.com/NVlabs/alpamayo">NVlabs/alpamayo</a> — NVIDIA's open foundational driving model (Physical AI / AV) <em>(31 PRs)</em>
 
@@ -284,9 +294,9 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 - [karpathy/autoresearch](https://github.com/karpathy/autoresearch) — bio/physics-inspired search strategies (Lévy flights, Metropolis-Hastings, golden-angle sampling, hippocampal replay) for the nanochat training loop
 - [ourresearch/openalex-overview](https://github.com/ourresearch/openalex-overview) — OpenAlex architecture diagram generation script
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
+<div align="center"><sub>·  ·  ·</sub></div>
 
-## 🎯 Area of Focus
+## ◉  focus
 
 - **Living in agent-native engineering** — Every project I ship has agents reading the diff, writing the patches, and arguing with each other before humans see it.
 - **Operating sustained PR sprints upstream** — 31 consecutive PRs to NVIDIA's Alpamayo in 4 days; clearing external review at YC-backed companies under bot-driven review pipelines.
@@ -295,9 +305,9 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 - **Federated learning contributor** — [flower.ai](https://flower.ai) ecosystem via [flwr-frl-kit](https://github.com/lonexreb/flwr-frl-kit).
 - **Building the [Zigsaw](https://zigsaw.dev) AI workflow platform** — chat or drag-and-drop to ship multi-LLM workflows as APIs.
 
-<img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
+<div align="center"><sub>·  ·  ·</sub></div>
 
-## 📫 Connect
+## ◉  connect
 
 [![Portfolio](https://img.shields.io/badge/-tripathy.ai-6366F1?style=flat-square&logo=safari&logoColor=white)](https://tripathy.ai)
 [![Zigsaw](https://img.shields.io/badge/-zigsaw.dev-06B6D4?style=flat-square&logo=safari&logoColor=white)](https://zigsaw.dev)
@@ -307,4 +317,8 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 
 ---
 
-*"Ship beats perfect"* — I build things that solve real problems, then open-source them.
+<div align="center">
+
+**चरैवेति** · charaiveti · *keep walking*
+
+</div>
