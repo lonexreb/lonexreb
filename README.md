@@ -17,11 +17,11 @@
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="https://img.shields.io/badge/Merged-7-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" alt="Merged PRs" /><br/>
+<img src="https://img.shields.io/badge/Merged-8-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" alt="Merged PRs" /><br/>
 <sub><b>shipped upstream</b></sub>
 </td>
 <td align="center" width="33%">
-<img src="https://img.shields.io/badge/Approved-4-1F2937?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=000000" alt="Approved PRs" /><br/>
+<img src="https://img.shields.io/badge/Approved-3-1F2937?style=for-the-badge&logo=githubactions&logoColor=white&labelColor=000000" alt="Approved PRs" /><br/>
 <sub><b>awaiting merge</b></sub>
 </td>
 <td align="center" width="33%">
@@ -40,6 +40,7 @@
 | 5 | [`warp#9563`](https://github.com/warpdotdev/warp/pull/9563) | warpdotdev/warp | Attribute Alacritty/vte derivative code in two more files |
 | 6 | [`warp#9667`](https://github.com/warpdotdev/warp/pull/9667) | warpdotdev/warp | Recognize Mistral Vibe as a CLI agent |
 | 7 | [`warp#9670`](https://github.com/warpdotdev/warp/pull/9670) | warpdotdev/warp | Route `CLIAgent::Pi` to the default session listener |
+| 8 | [`Megatron-Bridge#3649`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3649) | NVIDIA-NeMo/Megatron-Bridge | Add NVIDIA copyright headers to four package `__init__.py` files |
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
 
@@ -205,16 +206,17 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#2388`](https://github.com/NVIDIA-NeMo/RL/pull/2388) | open | Bump `accelerate` floor to 1.1.0 for `transformers` 5.3.0 compat |
 | [`#2387`](https://github.com/NVIDIA-NeMo/RL/pull/2387) | open | Test coverage for converter CLI entry points |
 
-### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(8 PRs · 4 approved)</em>
+### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(9 PRs · 1 merged · 3 approved)</em>
 
-**4 PRs maintainer-approved** — test coverage and observability across VLM / audio recipes, plus data-pipeline and TB-memory-aggregation fixes.
+**1 merged, 3 maintainer-approved** — test coverage and observability across VLM / audio recipes, plus data-pipeline and TB-memory-aggregation fixes.
 
 | PR | Status | What it does |
 |---|---|---|
-| [`#3649`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3649) | ✅ approved | Add NVIDIA copyright headers to four package `__init__.py` files |
+| [`#3649`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3649) | ✅ merged | Add NVIDIA copyright headers to four package `__init__.py` files |
 | [`#3647`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3647) | ✅ approved | Forward MoE / MTP metrics to MLFlow and Comet |
 | [`#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | ✅ approved | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
 | [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | ✅ approved | Aggregate TensorBoard memory metrics across PP group |
+| [`#3680`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3680) | open | Unit tests for HuggingFace dataset processors |
 | [`#3666`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3666) | open | Unit tests for `recipes/common.py` base helpers |
 | [`#3665`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3665) | open | Pad chat tensors and `loss_mask` in `pre_pad_dataset` (#2610) |
 | [`#3652`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3652) | open | Unit tests for `CometPlugin` |
