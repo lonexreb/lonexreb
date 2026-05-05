@@ -44,7 +44,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
 
-## 📊 GitHub Presence — 2026 YTD
+## 📊 2026 YTD
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=lonexreb&theme=dark&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&hide_border=true&starting_year=2026" height="170" alt="GitHub streak — 2026 YTD" />
@@ -53,6 +53,18 @@
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=lonexreb&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&area_color=ffffff&hide_border=true&days=30" width="100%" alt="Contribution graph — last 30 days" />
 </p>
+
+```text
+$ git log --since=2026-01-01 --shortstat | langstats
+
+Python      ████████████████████████████   73.6%
+TypeScript  ██████                         16.6%
+HTML        ██                              5.1%
+Other       █                               3.5%
+Rust                                        1.2%
+─────────────────────────────────────────────────
+1,023 commits  ·  5 languages  ·  30 active repos
+```
 
 ## 🔨 What I'm Building
 
