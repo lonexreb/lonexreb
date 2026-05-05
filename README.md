@@ -44,19 +44,14 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=000000&height=2" width="100%" />
 
-## 📊 GitHub Presence
+## 📊 GitHub Presence — 2026 YTD
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=lonexreb&show_icons=true&theme=dark&bg_color=000000&title_color=ffffff&text_color=ffffff&icon_color=ffffff&hide_border=true" height="170" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lonexreb&theme=dark&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&hide_border=true" height="170" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=lonexreb&theme=dark&background=000000&stroke=ffffff&ring=ffffff&fire=ffffff&currStreakLabel=ffffff&hide_border=true&starting_year=2026" height="170" alt="GitHub streak — 2026 YTD" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=lonexreb&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&area_color=ffffff&hide_border=true" width="100%" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=lonexreb&layout=compact&theme=dark&bg_color=000000&title_color=ffffff&text_color=ffffff&hide_border=true&langs_count=10" height="160" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=lonexreb&bg_color=000000&color=ffffff&line=ffffff&point=ffffff&area=true&area_color=ffffff&hide_border=true&days=30" width="100%" alt="Contribution graph — last 30 days" />
 </p>
 
 ## 🔨 What I'm Building
