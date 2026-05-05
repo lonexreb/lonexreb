@@ -165,18 +165,18 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 
 ### [NVIDIA-NeMo/Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) — NVIDIA's bridge between Megatron-LM and NeMo training recipes
 
-Test coverage and observability across VLM / audio recipes, plus data-pipeline and TB-memory-aggregation fixes.
+**4 PRs maintainer-approved** — test coverage and observability across VLM / audio recipes, plus data-pipeline and TB-memory-aggregation fixes.
 
 | PR | Status | What it does |
 |---|---|---|
+| [`#3649`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3649) | ✅ approved | Add NVIDIA copyright headers to four package `__init__.py` files |
+| [`#3647`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3647) | ✅ approved | Forward MoE / MTP metrics to MLFlow and Comet |
+| [`#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | ✅ approved | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
+| [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | ✅ approved | Aggregate TensorBoard memory metrics across PP group |
 | [`#3666`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3666) | open | Unit tests for `recipes/common.py` base helpers |
 | [`#3665`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3665) | open | Pad chat tensors and `loss_mask` in `pre_pad_dataset` (#2610) |
 | [`#3652`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3652) | open | Unit tests for `CometPlugin` |
 | [`#3650`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3650) | open | Unit tests for `pg_utils` helpers |
-| [`#3649`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3649) | open | Add NVIDIA copyright headers to four package `__init__.py` files |
-| [`#3647`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3647) | open | Forward MoE / MTP metrics to MLFlow and Comet |
-| [`#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | open | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
-| [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | open | Aggregate TensorBoard memory metrics across PP group |
 
 ### [openclaw/openclaw](https://github.com/openclaw/openclaw) — agentic coding platform
 
