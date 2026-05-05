@@ -80,11 +80,11 @@ I'm obsessed with making AI agents that actually work — event-driven systems, 
 
 ## 🌍 Open Source Contributions
 
-Shipping fixes, language support, and config improvements upstream — selected PRs:
+Shipping fixes, tests, and ergonomics upstream across NVIDIA's open AV / RL / training stack, agentic tooling, and terminal infra — selected PRs:
 
 ### 🌟 Featured: [NVlabs/alpamayo](https://github.com/NVlabs/alpamayo) — NVIDIA's open foundational driving model (Physical AI / AV)
 
-**The last 22 consecutive PRs to the repo are mine** (1 merged, 21 in review) — a sustained sprint hardening NVIDIA's open foundational driving model across input validation, runtime/attention correctness, type annotations, regression tests, docstring-vs-code drift, and first-run onboarding.
+**The last 31 consecutive PRs to the repo are mine** (1 merged, 30 in review) — a sustained sprint hardening NVIDIA's open foundational driving model across input validation, runtime/attention correctness, type annotations, evaluation metrics, regression tests, docstring-vs-code drift, and first-run onboarding.
 
 #### Validation & input handling
 
@@ -103,6 +103,7 @@ Shipping fixes, language support, and config improvements upstream — selected 
 | [`#75`](https://github.com/NVlabs/alpamayo/pull/75) | open | Pin expert decoder to SDPA so the model loads when Flash-Attention 2 is globally enabled (fixes #52) |
 | [`#78`](https://github.com/NVlabs/alpamayo/pull/78) | open | Remove deprecated `local_dir_use_symlinks` arg from `snapshot_download()` call |
 | [`#80`](https://github.com/NVlabs/alpamayo/pull/80) | open | Preserve integer/bool tensor dtype in `to_device()` (fixes #36) |
+| [`#99`](https://github.com/NVlabs/alpamayo/pull/99) | open | Use `dim=` instead of `axis=` in `comfort_reward._within_bound` (PyTorch idiom) |
 
 #### Type annotations & API contracts
 
@@ -111,6 +112,15 @@ Shipping fixes, language support, and config improvements upstream — selected 
 | [`#85`](https://github.com/NVlabs/alpamayo/pull/85) | open | Fix `get_label_mask` docstrings and `get_assistant_mask` return type |
 | [`#89`](https://github.com/NVlabs/alpamayo/pull/89) | open | Document exclusive-end `chunk_ids` range and broaden type annotation in `pai_utils` |
 | [`#92`](https://github.com/NVlabs/alpamayo/pull/92) | open | Fix `MetricRunner.run()` return-type annotation and document its side effect |
+| [`#95`](https://github.com/NVlabs/alpamayo/pull/95) | open | Fix `viz.py` type hints — optional waypoints + `rotate_90cc` annotations |
+| [`#96`](https://github.com/NVlabs/alpamayo/pull/96) | open | Type-fix `init_wandb` `key` parameter and `_save_wandb_id` return type |
+
+#### New evaluation metrics
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#101`](https://github.com/NVlabs/alpamayo/pull/101) | open | Add Final Displacement Error (FDE) and minFDE metrics to evaluation suite |
+| [`#102`](https://github.com/NVlabs/alpamayo/pull/102) | open | Add trajectory smoothness metrics for evaluation |
 
 #### Docs & docstring sync
 
@@ -123,6 +133,7 @@ Shipping fixes, language support, and config improvements upstream — selected 
 | [`#86`](https://github.com/NVlabs/alpamayo/pull/86) | open | Sync metric docstrings with the keys actually returned |
 | [`#87`](https://github.com/NVlabs/alpamayo/pull/87) | open | Document exclusive-end `--chunk` range in `curate_pai_samples.py` |
 | [`#93`](https://github.com/NVlabs/alpamayo/pull/93) | open | Sync `DistanceMetrics` docstrings with the actual signature and returns |
+| [`#98`](https://github.com/NVlabs/alpamayo/pull/98) | open | Fix `launch_alpamayo_model` docstring — checkpoint source is `--config` arg, not env var |
 
 #### Tests & DX
 
@@ -132,6 +143,40 @@ Shipping fixes, language support, and config improvements upstream — selected 
 | [`#88`](https://github.com/NVlabs/alpamayo/pull/88) | open | Remove commented-out debug print in `QwenProcessor._preprocess_data` |
 | [`#90`](https://github.com/NVlabs/alpamayo/pull/90) | open | Add regression tests for `basic_collation_fn` and `get_assistant_mask` |
 | [`#91`](https://github.com/NVlabs/alpamayo/pull/91) | open | Add regression tests for `compute_minade` and `summarize_metric` keys |
+| [`#97`](https://github.com/NVlabs/alpamayo/pull/97) | open | Remove dead misplaced shebang from `convert_release_config_to_training.py` |
+| [`#100`](https://github.com/NVlabs/alpamayo/pull/100) | open | Add CLI flags to `test_inference.py` without changing default behavior |
+| [`#103`](https://github.com/NVlabs/alpamayo/pull/103) | open | Add `python -m alpamayo_r1.healthcheck` install smoke test |
+
+### [NVIDIA-NeMo/RL](https://github.com/NVIDIA-NeMo/RL) — NVIDIA's RL framework for LLM post-training (GRPO, DAPO, Megatron)
+
+Production-grade error handling, configuration ergonomics, and test coverage for the GRPO / Megatron training loop.
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#2395`](https://github.com/NVIDIA-NeMo/RL/pull/2395) | open | Clearer error when GRPO `overlong_filtering` finds no `truncated` field |
+| [`#2394`](https://github.com/NVIDIA-NeMo/RL/pull/2394) | open | Hard-fail when `nemo_gym` rollout collection returns fewer rows than requested |
+| [`#2393`](https://github.com/NVIDIA-NeMo/RL/pull/2393) | open | Extend worker offload guard to v2 + Megatron paths |
+| [`#2392`](https://github.com/NVIDIA-NeMo/RL/pull/2392) | open | Clear error when DTensor `train` / `get_logprobs` / `score` is called while offloaded |
+| [`#2391`](https://github.com/NVIDIA-NeMo/RL/pull/2391) | open | Expose Megatron checkpoint parallelism and RNG knobs to user config |
+| [`#2390`](https://github.com/NVIDIA-NeMo/RL/pull/2390) | open | Expose hardcoded Megatron infrastructure params to user config |
+| [`#2389`](https://github.com/NVIDIA-NeMo/RL/pull/2389) | open | Add author field to README citation BibTeX |
+| [`#2388`](https://github.com/NVIDIA-NeMo/RL/pull/2388) | open | Bump `accelerate` floor to 1.1.0 for `transformers` 5.3.0 compat |
+| [`#2387`](https://github.com/NVIDIA-NeMo/RL/pull/2387) | open | Test coverage for converter CLI entry points |
+
+### [NVIDIA-NeMo/Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge) — NVIDIA's bridge between Megatron-LM and NeMo training recipes
+
+Test coverage and observability across VLM / audio recipes, plus data-pipeline and TB-memory-aggregation fixes.
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#3666`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3666) | open | Unit tests for `recipes/common.py` base helpers |
+| [`#3665`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3665) | open | Pad chat tensors and `loss_mask` in `pre_pad_dataset` (#2610) |
+| [`#3652`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3652) | open | Unit tests for `CometPlugin` |
+| [`#3650`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3650) | open | Unit tests for `pg_utils` helpers |
+| [`#3649`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3649) | open | Add NVIDIA copyright headers to four package `__init__.py` files |
+| [`#3647`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3647) | open | Forward MoE / MTP metrics to MLFlow and Comet |
+| [`#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | open | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
+| [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | open | Aggregate TensorBoard memory metrics across PP group |
 
 ### [openclaw/openclaw](https://github.com/openclaw/openclaw) — agentic coding platform
 
@@ -168,14 +213,22 @@ Shipping fixes, language support, and config improvements upstream — selected 
 |---|---|---|
 | [`#9558`](https://github.com/warpdotdev/warp/pull/9558) | ✅ merged | Align OSS `.desktop` `Exec` with packaged binary name |
 | [`#9563`](https://github.com/warpdotdev/warp/pull/9563) | ✅ merged | Attribute Alacritty/vte derivative code in two more files |
+| [`#9667`](https://github.com/warpdotdev/warp/pull/9667) | ✅ merged | Recognize Mistral Vibe as a CLI agent |
 | [`#9670`](https://github.com/warpdotdev/warp/pull/9670) | ✅ merged | Route `CLIAgent::Pi` to the default session listener |
-| [`#9712`](https://github.com/warpdotdev/warp/pull/9712) | open | Register Rename Active Pane as a keyboard-bindable action |
-| [`#9568`](https://github.com/warpdotdev/warp/pull/9568) | open | Add JSON language support via `vscode-json-languageserver` |
-| [`#9562`](https://github.com/warpdotdev/warp/pull/9562) | open | Add PHP language support via Intelephense LSP |
-| [`#9560`](https://github.com/warpdotdev/warp/pull/9560) | open | Strip linked-worktree `+` marker from branch picker |
-| [`#9667`](https://github.com/warpdotdev/warp/pull/9667) | open | Recognize Mistral Vibe as a CLI agent |
-| [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | open | Fail fast on bootstrap when Node.js / yarn are missing |
-| [`#9671`](https://github.com/warpdotdev/warp/pull/9671) | open | Clear permission-scoped state when leaving the permission flow |
+| [`#10026`](https://github.com/warpdotdev/warp/pull/10026) | open | Spec: Shift+Click extends terminal text selection (#9963) |
+| [`#10025`](https://github.com/warpdotdev/warp/pull/10025) | open | Spec: Reload File Tree action in Command Palette (#10003) |
+| [`#10023`](https://github.com/warpdotdev/warp/pull/10023) | open | Spec: Tab Configs in Command Palette and keyboard shortcuts (#9176) |
+| [`#10022`](https://github.com/warpdotdev/warp/pull/10022) | open | Detect Node.js / Python shebang scripts as their agent identity (#9870) |
+| [`#10019`](https://github.com/warpdotdev/warp/pull/10019) | open | Avoid duplicate apt source entries when `.sources` exists (#10011) |
+| [`#10018`](https://github.com/warpdotdev/warp/pull/10018) | open | Spec: launch configs that open at app startup (#9203) |
+| [`#10017`](https://github.com/warpdotdev/warp/pull/10017) | open | Install Xcode Metal Toolchain on macOS during bootstrap (#9996) |
+| [`#10014`](https://github.com/warpdotdev/warp/pull/10014) | open | Spec: built-in `/review` slash command (#9606) |
+| [`#10013`](https://github.com/warpdotdev/warp/pull/10013) | open | Spec: File Tree icon themes (#9731) |
+| [`#9848`](https://github.com/warpdotdev/warp/pull/9848) | open | Spec: user-configurable language servers (#8803) |
+| [`#9712`](https://github.com/warpdotdev/warp/pull/9712) | open | Register Rename Active Pane as a keyboard-bindable action (#9351) |
+| [`#9671`](https://github.com/warpdotdev/warp/pull/9671) | open | Clear permission-scoped state when leaving the permission flow (#9525) |
+| [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | open | Fail fast on bootstrap when Node.js / yarn are missing (#9544) |
+| [`#9560`](https://github.com/warpdotdev/warp/pull/9560) | open | Strip linked-worktree `+` marker from branch picker (#9170) |
 
 ### Also contributing to
 
