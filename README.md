@@ -27,7 +27,7 @@
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="https://img.shields.io/badge/Merged-10-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" alt="Merged PRs" /><br/>
+<img src="https://img.shields.io/badge/Merged-13-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" alt="Merged PRs" /><br/>
 <sub><b>shipped upstream</b></sub>
 </td>
 <td align="center" width="33%">
@@ -53,6 +53,9 @@
 | 8 | [`Megatron-Bridge#3649`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3649) | NVIDIA-NeMo/Megatron-Bridge | Add NVIDIA copyright headers to four package `__init__.py` files |
 | 9 | [`Megatron-Bridge#3647`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3647) | NVIDIA-NeMo/Megatron-Bridge | Forward MoE / MTP metrics to MLFlow and Comet |
 | 10 | [`Megatron-Bridge#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | NVIDIA-NeMo/Megatron-Bridge | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
+| 11 | [`openclaw#77372`](https://github.com/openclaw/openclaw/pull/77372) | openclaw/openclaw | Forward workspace bootstrap into `developerInstructions` (codex/app-server) |
+| 12 | [`warp#9712`](https://github.com/warpdotdev/warp/pull/9712) | warpdotdev/warp | Register Rename Active Pane as a keyboard-bindable action |
+| 13 | [`warp#10019`](https://github.com/warpdotdev/warp/pull/10019) | warpdotdev/warp | Avoid duplicate apt source entries when `.sources` exists |
 
 <div align="center"><sub>·  ·  ·</sub></div>
 
@@ -226,9 +229,9 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#2388`](https://github.com/NVIDIA-NeMo/RL/pull/2388) | open | Bump `accelerate` floor to 1.1.0 for `transformers` 5.3.0 compat |
 | [`#2387`](https://github.com/NVIDIA-NeMo/RL/pull/2387) | open | Test coverage for converter CLI entry points |
 
-### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(12 PRs · 3 merged · 2 approved)</em>
+### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(12 PRs · 3 merged · 3 approved)</em>
 
-**3 merged, 2 maintainer-approved** — test coverage and observability across VLM / audio recipes, plus data-pipeline, TB-memory-aggregation, and model-bridge work.
+**3 merged, 3 maintainer-approved** — test coverage and observability across VLM / audio recipes, plus data-pipeline, TB-memory-aggregation, and model-bridge work.
 
 | PR | Status | What it does |
 |---|---|---|
@@ -237,23 +240,23 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | ✅ merged | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
 | [`#3695`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3695) | ✅ approved | MLA, MTP, and provider-override coverage for FLOPs / MFU |
 | [`#3650`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3650) | ✅ approved | Unit tests for `pg_utils` helpers |
+| [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | ✅ approved | Aggregate TensorBoard memory metrics across PP group |
 | [`#3698`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3698) | open | Bridge support for OLMo-2 dense causal LMs |
 | [`#3680`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3680) | open | Unit tests for HuggingFace dataset processors |
 | [`#3666`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3666) | open | Unit tests for `recipes/common.py` base helpers |
 | [`#3665`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3665) | open | Pad chat tensors and `loss_mask` in `pre_pad_dataset` (#2610) |
 | [`#3652`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3652) | open | Unit tests for `CometPlugin` |
-| [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | open | Aggregate TensorBoard memory metrics across PP group |
 
-### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(19 PRs · 2 merged)</em>
+### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(19 PRs · 3 merged)</em>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/fb73a4f67bc011beede2f4dc1be252a4)**
 
 | PR | Status | What it does |
 |---|---|---|
 | [`#77446`](https://github.com/openclaw/openclaw/pull/77446) | ✅ merged | Pin container-side workspace and config dirs in `docker compose` |
+| [`#77372`](https://github.com/openclaw/openclaw/pull/77372) | ✅ merged | Forward workspace bootstrap into `developerInstructions` in codex/app-server |
 | [`#74638`](https://github.com/openclaw/openclaw/pull/74638) | ✅ merged | Accept `browser.tabCleanup` keys in zod schema |
 | [`#78035`](https://github.com/openclaw/openclaw/pull/78035) | open | Preserve sibling supplement results when one search rejects in `memory-core` |
-| [`#77372`](https://github.com/openclaw/openclaw/pull/77372) | open | Forward workspace bootstrap into `developerInstructions` in codex/app-server |
 | [`#77367`](https://github.com/openclaw/openclaw/pull/77367) | open | Scope Discord `command-deploy` cache by application id (multi-tenant isolation, 3 regression tests) |
 | [`#75476`](https://github.com/openclaw/openclaw/pull/75476) | open | Honor `model.compat.unsupportedToolSchemaKeywords` for OpenAI-completions tool schemas |
 | [`#75445`](https://github.com/openclaw/openclaw/pull/75445) | open | Tolerate unresolved `SecretRef` tokens during Discord/Telegram channel-actions discovery |
@@ -270,7 +273,7 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#77215`](https://github.com/openclaw/openclaw/pull/77215) | open | Document Realtime Talk requires OpenAI Platform credits, not Codex subscription |
 | [`#77224`](https://github.com/openclaw/openclaw/pull/77224) | open | Document BlueBubbles channel-vs-plugin disablement layers + safe loopback config |
 
-### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(23 PRs · 4 merged · 2 approved)</em>
+### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(35 PRs · 6 merged · 1 approved)</em>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/5e15a6a19988926f0f0fc79808d72971)**
 
@@ -280,8 +283,21 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#9563`](https://github.com/warpdotdev/warp/pull/9563) | ✅ merged | Attribute Alacritty/vte derivative code in two more files |
 | [`#9667`](https://github.com/warpdotdev/warp/pull/9667) | ✅ merged | Recognize Mistral Vibe as a CLI agent |
 | [`#9670`](https://github.com/warpdotdev/warp/pull/9670) | ✅ merged | Route `CLIAgent::Pi` to the default session listener |
-| [`#9712`](https://github.com/warpdotdev/warp/pull/9712) | ✅ approved | Register Rename Active Pane as a keyboard-bindable action (#9351) |
+| [`#9712`](https://github.com/warpdotdev/warp/pull/9712) | ✅ merged | Register Rename Active Pane as a keyboard-bindable action (#9351) |
+| [`#10019`](https://github.com/warpdotdev/warp/pull/10019) | ✅ merged | Avoid duplicate apt source entries when `.sources` exists (#10011) |
 | [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | ✅ approved | Fail fast on bootstrap when Node.js / yarn are missing (#9544) |
+| [`#10380`](https://github.com/warpdotdev/warp/pull/10380) | open | Spec: requested command details expanded by default (#8967) |
+| [`#10232`](https://github.com/warpdotdev/warp/pull/10232) | open | Spec: editable prompt suggestions (#9842) |
+| [`#10231`](https://github.com/warpdotdev/warp/pull/10231) | open | Spec: horizontal scrolling per terminal pane (#9828) |
+| [`#10230`](https://github.com/warpdotdev/warp/pull/10230) | open | Spec: refresh repo metadata after `claude --worktree` (#10031) |
+| [`#10229`](https://github.com/warpdotdev/warp/pull/10229) | open | Spec: tab configs specify agent profile (#10171) |
+| [`#10228`](https://github.com/warpdotdev/warp/pull/10228) | open | Spec: prevent overshoot scrolling code diff to top (#9808) |
+| [`#10227`](https://github.com/warpdotdev/warp/pull/10227) | open | Spec: toolbelt buttons on collapsed conversation blocklist items (#9810) |
+| [`#10226`](https://github.com/warpdotdev/warp/pull/10226) | open | Spec: improve default proportional font readability (#9953) |
+| [`#10225`](https://github.com/warpdotdev/warp/pull/10225) | open | Spec: multiline + command-keyed redaction (#10027) |
+| [`#10224`](https://github.com/warpdotdev/warp/pull/10224) | open | Spec: persistent weekly USD spend status bar (#9965) |
+| [`#10223`](https://github.com/warpdotdev/warp/pull/10223) | open | Spec: open review panel maximised by default (#10036) |
+| [`#10222`](https://github.com/warpdotdev/warp/pull/10222) | open | Spec: unified file-read interface (#10049) |
 | [`#10179`](https://github.com/warpdotdev/warp/pull/10179) | open | Show agent status badges in vertical-tabs summary view (#9868) |
 | [`#10129`](https://github.com/warpdotdev/warp/pull/10129) | open | Spec: generic syntax-highlight definition mechanism (#9955) |
 | [`#10128`](https://github.com/warpdotdev/warp/pull/10128) | open | Spec: per-message timestamps in Agent Mode (#9889) |
@@ -291,7 +307,6 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#10025`](https://github.com/warpdotdev/warp/pull/10025) | open | Spec: Reload File Tree action in Command Palette (#10003) |
 | [`#10023`](https://github.com/warpdotdev/warp/pull/10023) | open | Spec: Tab Configs in Command Palette and keyboard shortcuts (#9176) |
 | [`#10022`](https://github.com/warpdotdev/warp/pull/10022) | open | Detect Node.js / Python shebang scripts as their agent identity (#9870) |
-| [`#10019`](https://github.com/warpdotdev/warp/pull/10019) | open | Avoid duplicate apt source entries when `.sources` exists (#10011) |
 | [`#10018`](https://github.com/warpdotdev/warp/pull/10018) | open | Spec: launch configs that open at app startup (#9203) |
 | [`#10017`](https://github.com/warpdotdev/warp/pull/10017) | open | Install Xcode Metal Toolchain on macOS during bootstrap (#9996) |
 | [`#10014`](https://github.com/warpdotdev/warp/pull/10014) | open | Spec: built-in `/review` slash command (#9606) |
