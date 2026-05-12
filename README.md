@@ -35,7 +35,7 @@
 <sub><b>awaiting merge</b></sub>
 </td>
 <td align="center" width="33%">
-<img src="https://img.shields.io/badge/Open-50%2B-374151?style=for-the-badge&logo=git&logoColor=white&labelColor=000000" alt="Open PRs" /><br/>
+<img src="https://img.shields.io/badge/Open-100%2B-374151?style=for-the-badge&logo=git&logoColor=white&labelColor=000000" alt="Open PRs" /><br/>
 <sub><b>in active review</b></sub>
 </td>
 </tr>
@@ -234,9 +234,9 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#2388`](https://github.com/NVIDIA-NeMo/RL/pull/2388) | open | Bump `accelerate` floor to 1.1.0 for `transformers` 5.3.0 compat |
 | [`#2387`](https://github.com/NVIDIA-NeMo/RL/pull/2387) | open | Test coverage for converter CLI entry points |
 
-### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(11 PRs · 7 merged)</em>
+### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(20 PRs · 7 merged)</em>
 
-**7 PRs merged** — test coverage and observability across VLM / audio recipes, plus data-pipeline, TB-memory-aggregation, FLOPs/MFU instrumentation, and model-bridge work.
+**7 PRs merged** — test coverage and observability across VLM / audio recipes, plus data-pipeline, TB-memory-aggregation, FLOPs/MFU instrumentation, and model-bridge work. **10 new PRs on 2026-05-12** — a sprint of unit-test coverage across recipes/training/utils + diffusion-pkg headers, troubleshooting docs, and a typo fix.
 
 | PR | Status | What it does |
 |---|---|---|
@@ -247,12 +247,21 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#3647`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3647) | ✅ merged | Forward MoE / MTP metrics to MLFlow and Comet |
 | [`#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | ✅ merged | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
 | [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | ✅ merged | Aggregate TensorBoard memory metrics across PP group |
+| [`#3797`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3797) | open | Compact troubleshooting guide (closes #2657) |
+| [`#3792`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3792) | open | Unit tests for `cuda_graph` read-side helpers |
+| [`#3791`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3791) | open | Fix typo in `qwen3_vl` rope comment (`seperate` → `separate`) |
+| [`#3790`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3790) | open | Unit tests for `vanilla_gpt_pretrain_config` |
+| [`#3789`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3789) | open | Unit tests for Gemma2 recipe configuration builders |
+| [`#3788`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3788) | open | Unit tests for `wandb_utils` checkpoint callbacks |
+| [`#3787`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3787) | open | Unit tests for `utils/decorators` |
+| [`#3786`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3786) | open | Unit tests for `padding_utils` helpers |
+| [`#3785`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3785) | open | Unit tests for `theoretical_memory_utils` |
+| [`#3784`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3784) | open | NVIDIA copyright headers across 13 diffusion `__init__.py` files |
 | [`#3698`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3698) | open | Bridge support for OLMo-2 dense causal LMs |
 | [`#3680`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3680) | open | Unit tests for HuggingFace dataset processors |
-| [`#3666`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3666) | open | Unit tests for `recipes/common.py` base helpers |
 | [`#3665`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3665) | open | Pad chat tensors and `loss_mask` in `pre_pad_dataset` (#2610) |
 
-### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(19 PRs · 3 merged)</em>
+### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(14 PRs · 3 merged)</em>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/fb73a4f67bc011beede2f4dc1be252a4)**
 
@@ -261,26 +270,23 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#77446`](https://github.com/openclaw/openclaw/pull/77446) | ✅ merged | Pin container-side workspace and config dirs in `docker compose` |
 | [`#77372`](https://github.com/openclaw/openclaw/pull/77372) | ✅ merged | Forward workspace bootstrap into `developerInstructions` in codex/app-server |
 | [`#74638`](https://github.com/openclaw/openclaw/pull/74638) | ✅ merged | Accept `browser.tabCleanup` keys in zod schema |
+| [`#81199`](https://github.com/openclaw/openclaw/pull/81199) | open | Re-inject system prompt on `claude --resume` (#80374) |
+| [`#81195`](https://github.com/openclaw/openclaw/pull/81195) | open | Suppress telegram media-fetch error reply in `requireMention` groups (#81181) |
 | [`#78035`](https://github.com/openclaw/openclaw/pull/78035) | open | Preserve sibling supplement results when one search rejects in `memory-core` |
 | [`#77367`](https://github.com/openclaw/openclaw/pull/77367) | open | Scope Discord `command-deploy` cache by application id (multi-tenant isolation, 3 regression tests) |
-| [`#75476`](https://github.com/openclaw/openclaw/pull/75476) | open | Honor `model.compat.unsupportedToolSchemaKeywords` for OpenAI-completions tool schemas |
+| [`#77215`](https://github.com/openclaw/openclaw/pull/77215) | open | Document Realtime Talk requires OpenAI Platform credits, not Codex subscription |
+| [`#77184`](https://github.com/openclaw/openclaw/pull/77184) | open | Re-export `StatusSummary`, `SessionStatus`, `HeartbeatStatus` from plugin-sdk |
 | [`#75445`](https://github.com/openclaw/openclaw/pull/75445) | open | Tolerate unresolved `SecretRef` tokens during Discord/Telegram channel-actions discovery |
-| [`#75339`](https://github.com/openclaw/openclaw/pull/75339) | open | Normalize structured `delta.content` blocks to prevent `[object Object]` in chat replies |
 | [`#75248`](https://github.com/openclaw/openclaw/pull/75248) | open | Reorder workspace `AGENTS.md` template so load-bearing rules come first |
 | [`#75217`](https://github.com/openclaw/openclaw/pull/75217) | open | Honor `skipBootstrap` at the runtime injection path |
-| [`#74945`](https://github.com/openclaw/openclaw/pull/74945) | open | Canonicalize `--model` to lowercase before dispatch |
 | [`#74891`](https://github.com/openclaw/openclaw/pull/74891) | open | Skip API-key prompt when user skipped installing the skill |
 | [`#74643`](https://github.com/openclaw/openclaw/pull/74643) | open | Per-agent `verboseDefault` and `elevatedDefault` config overrides |
-| [`#77184`](https://github.com/openclaw/openclaw/pull/77184) | open | Re-export `StatusSummary`, `SessionStatus`, `HeartbeatStatus` from plugin-sdk |
-| [`#77189`](https://github.com/openclaw/openclaw/pull/77189) | open | Downgrade expected 1013 "gateway starting" close-before-connect log to debug |
-| [`#77191`](https://github.com/openclaw/openclaw/pull/77191) | open | Optional `agentId` filter on `cron.list` with default-agent fallback |
-| [`#77197`](https://github.com/openclaw/openclaw/pull/77197) | open | Surface sharp-install hint when image optimizer exhausts every resize attempt |
-| [`#77215`](https://github.com/openclaw/openclaw/pull/77215) | open | Document Realtime Talk requires OpenAI Platform credits, not Codex subscription |
-| [`#77224`](https://github.com/openclaw/openclaw/pull/77224) | open | Document BlueBubbles channel-vs-plugin disablement layers + safe loopback config |
 
-### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(48 PRs · 7 merged · 1 approved)</em>
+### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(62 PRs · 7 merged · 1 approved)</em>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/5e15a6a19988926f0f0fc79808d72971)**
+
+**15 new PRs on 2026-05-12** — terminal-rendering correctness, window-tab/pane persistence, and input-bar UX hardening.
 
 | PR | Status | What it does |
 |---|---|---|
@@ -292,6 +298,21 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#9712`](https://github.com/warpdotdev/warp/pull/9712) | ✅ merged | Register Rename Active Pane as a keyboard-bindable action (#9351) |
 | [`#10019`](https://github.com/warpdotdev/warp/pull/10019) | ✅ merged | Avoid duplicate apt source entries when `.sources` exists (#10011) |
 | [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | ✅ approved | Fail fast on bootstrap when Node.js / yarn are missing (#9544) |
+| [`#10752`](https://github.com/warpdotdev/warp/pull/10752) | open | Anchor input prompt to viewport bottom during alt-screen streaming (#9365) |
+| [`#10743`](https://github.com/warpdotdev/warp/pull/10743) | open | Clear in place on CSI 2J at home position (#9181) |
+| [`#10742`](https://github.com/warpdotdev/warp/pull/10742) | open | Suppress stale "still running" toast when input box hidden for non-command reasons |
+| [`#10738`](https://github.com/warpdotdev/warp/pull/10738) | open | Render group header for every multi-pane vertical tab (#9098) |
+| [`#10737`](https://github.com/warpdotdev/warp/pull/10737) | open | Diagnosis: typing order on slow systems (#9418) |
+| [`#10736`](https://github.com/warpdotdev/warp/pull/10736) | open | Suppress error underline until external commands load (#9182) |
+| [`#10735`](https://github.com/warpdotdev/warp/pull/10735) | open | Preserve terminal scroll position across tab switches (#9171) |
+| [`#10734`](https://github.com/warpdotdev/warp/pull/10734) | open | Preserve user-set tab name across AI auto-naming (#9102) |
+| [`#10731`](https://github.com/warpdotdev/warp/pull/10731) | open | Add `command_input_min_lines` setting (#9197) |
+| [`#10730`](https://github.com/warpdotdev/warp/pull/10730) | open | Honor user-defined keybindings over default conflicts (#9128) |
+| [`#10729`](https://github.com/warpdotdev/warp/pull/10729) | open | Keep pinned input anchored during inline interactive prompts (#10144) |
+| [`#10709`](https://github.com/warpdotdev/warp/pull/10709) | open | Add "Copy as Markdown" to plan dropdown menu (#9214) |
+| [`#10708`](https://github.com/warpdotdev/warp/pull/10708) | open | Restore presentation state on unexpected in-band end marker (#9817) |
+| [`#10707`](https://github.com/warpdotdev/warp/pull/10707) | open | Map visual rows to source rows for softwrap inside markdown tables (#10016) |
+| [`#10706`](https://github.com/warpdotdev/warp/pull/10706) | open | Toggle Rich input panel on Ctrl+G (#9916) |
 | [`#10500`](https://github.com/warpdotdev/warp/pull/10500) | open | Spec: machine-readable export for agent conversations (#10112) |
 | [`#10498`](https://github.com/warpdotdev/warp/pull/10498) | open | Spec: per-window zoom level (#10115) |
 | [`#10497`](https://github.com/warpdotdev/warp/pull/10497) | open | Spec: bindable shortcut to copy editor file path (#10290) |
@@ -331,7 +352,6 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#10014`](https://github.com/warpdotdev/warp/pull/10014) | open | Spec: built-in `/review` slash command (#9606) |
 | [`#10013`](https://github.com/warpdotdev/warp/pull/10013) | open | Spec: File Tree icon themes (#9731) |
 | [`#9848`](https://github.com/warpdotdev/warp/pull/9848) | open | Spec: user-configurable language servers (#8803) |
-| [`#9560`](https://github.com/warpdotdev/warp/pull/9560) | open | Strip linked-worktree `+` marker from branch picker (#9170) |
 
 ### Also contributing to
 
