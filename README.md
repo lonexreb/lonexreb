@@ -154,15 +154,23 @@ Rust                                        1.2%
 
 when the model is stuck, you can either complain or send a patch. i've been sending patches — across NVIDIA's open AV / RL / training stack, the agentic tooling layer, and the terminal layer.
 
-### 🌟 Featured: <a href="https://github.com/NVlabs/alpamayo">NVlabs/alpamayo</a> — NVIDIA's open foundational driving model (Physical AI / AV) <em>(32 PRs)</em>
+### 🌟 Featured: <a href="https://github.com/NVlabs/alpamayo">NVlabs/alpamayo</a> — NVIDIA's open foundational driving model (Physical AI / AV) <em>(32 PRs · 1 merged · 31 in review)</em>
 
-**The last 32 consecutive PRs to the repo are mine** (1 merged, 31 in review) — a sustained sprint hardening NVIDIA's open foundational driving model across input validation, runtime/attention correctness, type annotations, evaluation metrics, regression tests, docstring-vs-code drift, and first-run onboarding.
+**The last 32 consecutive PRs to the repo are mine** — a sustained sprint hardening NVIDIA's open foundational driving model across input validation, runtime/attention correctness, type annotations, evaluation metrics, regression tests, docstring-vs-code drift, and first-run onboarding.
+
+**Shipped:**
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#73`](https://github.com/NVlabs/alpamayo/pull/73) | ✅ merged | Replace `assert` with `ValueError` in `load_physical_aiavdataset()` so input validation survives `python -O` |
+
+<details>
+<summary><b>Show all 31 PRs in review →</b></summary>
 
 #### Validation & input handling
 
 | PR | Status | What it does |
 |---|---|---|
-| [`#73`](https://github.com/NVlabs/alpamayo/pull/73) | ✅ merged | Replace `assert` with `ValueError` in `load_physical_aiavdataset()` so input validation survives `python -O` |
 | [`#74`](https://github.com/NVlabs/alpamayo/pull/74) | open | Actionable HuggingFace dataset-access errors — surface gated-repo / 401 / 403 instead of confusing `IndexError` (fixes #59, #61) |
 | [`#77`](https://github.com/NVlabs/alpamayo/pull/77) | open | Replace `assert` with `ValueError` across public-API input validation |
 | [`#84`](https://github.com/NVlabs/alpamayo/pull/84) | open | Replace mutable default list with `None` sentinel in `basic_collation_fn` |
@@ -220,9 +228,14 @@ when the model is stuck, you can either complain or send a patch. i've been send
 | [`#100`](https://github.com/NVlabs/alpamayo/pull/100) | open | Add CLI flags to `test_inference.py` without changing default behavior |
 | [`#103`](https://github.com/NVlabs/alpamayo/pull/103) | open | Add `python -m alpamayo_r1.healthcheck` install smoke test |
 
-### <a href="https://github.com/NVIDIA-NeMo/RL">NVIDIA-NeMo/RL</a> — NVIDIA's RL framework for LLM post-training (GRPO, DAPO, Megatron) <em>(9 PRs)</em>
+</details>
 
-Production-grade error handling, configuration ergonomics, and test coverage for the GRPO / Megatron training loop.
+### <a href="https://github.com/NVIDIA-NeMo/RL">NVIDIA-NeMo/RL</a> — NVIDIA's RL framework for LLM post-training (GRPO, DAPO, Megatron) <em>(9 PRs · 0 merged · 9 in review)</em>
+
+Production-grade error handling, configuration ergonomics, and test coverage for the GRPO / Megatron training loop. _All 9 PRs in active review — none yet shipped._
+
+<details>
+<summary><b>Show all 9 PRs in review →</b></summary>
 
 | PR | Status | What it does |
 |---|---|---|
@@ -236,9 +249,13 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#2388`](https://github.com/NVIDIA-NeMo/RL/pull/2388) | open | Bump `accelerate` floor to 1.1.0 for `transformers` 5.3.0 compat |
 | [`#2387`](https://github.com/NVIDIA-NeMo/RL/pull/2387) | open | Test coverage for converter CLI entry points |
 
-### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(23 PRs · 8 merged)</em>
+</details>
 
-**8 PRs merged** — test coverage and observability across VLM / audio recipes, plus data-pipeline, TB-memory-aggregation, FLOPs/MFU instrumentation, model-bridge work, and a qwen3_vl typo fix. **3 new docs PRs on 2026-05-13** (SFT dataset guide + Ministral 3 / MiniMax-M2 model pages) follow the **10-PR unit-test sprint of 2026-05-12**.
+### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(23 PRs · 8 merged · 15 in review)</em>
+
+**8 PRs merged** — test coverage and observability across VLM / audio recipes, plus data-pipeline, TB-memory-aggregation, FLOPs/MFU instrumentation, model-bridge work, and a qwen3_vl typo fix.
+
+**Shipped:**
 
 | PR | Status | What it does |
 |---|---|---|
@@ -250,6 +267,12 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#3647`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3647) | ✅ merged | Forward MoE / MTP metrics to MLFlow and Comet |
 | [`#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | ✅ merged | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
 | [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | ✅ merged | Aggregate TensorBoard memory metrics across PP group |
+
+<details>
+<summary><b>Show all 15 PRs in review →</b> (3 new docs PRs on 2026-05-13 + 10-PR unit-test sprint of 2026-05-12)</summary>
+
+| PR | Status | What it does |
+|---|---|---|
 | [`#3800`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3800) | open | Docs: MiniMax-M2 model documentation page |
 | [`#3799`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3799) | open | Docs: Ministral 3 model documentation page |
 | [`#3798`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3798) | open | Docs: SFT dataset support guide (closes #2200) |
@@ -266,15 +289,25 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#3680`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3680) | open | Unit tests for HuggingFace dataset processors |
 | [`#3665`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3665) | open | Pad chat tensors and `loss_mask` in `pre_pad_dataset` (#2610) |
 
-### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(15 PRs · 3 merged)</em>
+</details>
+
+### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(15 PRs · 3 merged · 12 in review)</em>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/fb73a4f67bc011beede2f4dc1be252a4)**
+
+**Shipped:**
 
 | PR | Status | What it does |
 |---|---|---|
 | [`#77446`](https://github.com/openclaw/openclaw/pull/77446) | ✅ merged | Pin container-side workspace and config dirs in `docker compose` |
 | [`#77372`](https://github.com/openclaw/openclaw/pull/77372) | ✅ merged | Forward workspace bootstrap into `developerInstructions` in codex/app-server |
 | [`#74638`](https://github.com/openclaw/openclaw/pull/74638) | ✅ merged | Accept `browser.tabCleanup` keys in zod schema |
+
+<details>
+<summary><b>Show all 12 PRs in review →</b></summary>
+
+| PR | Status | What it does |
+|---|---|---|
 | [`#81208`](https://github.com/openclaw/openclaw/pull/81208) | open | Gate amazon-bedrock-mantle implicit discovery on AWS creds presence (#67288) |
 | [`#81199`](https://github.com/openclaw/openclaw/pull/81199) | open | Re-inject system prompt on `claude --resume` (#80374) |
 | [`#81195`](https://github.com/openclaw/openclaw/pull/81195) | open | Suppress telegram media-fetch error reply in `requireMention` groups (#81181) |
@@ -288,11 +321,15 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#74891`](https://github.com/openclaw/openclaw/pull/74891) | open | Skip API-key prompt when user skipped installing the skill |
 | [`#74643`](https://github.com/openclaw/openclaw/pull/74643) | open | Per-agent `verboseDefault` and `elevatedDefault` config overrides |
 
-### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(61 PRs · 8 merged · 1 approved)</em>
+</details>
+
+### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(61 PRs · 8 merged · 1 approved · 52 in review)</em>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/5e15a6a19988926f0f0fc79808d72971)**
 
 **8th merge on 2026-05-13** — Ctrl+G Rich panel toggle (#10706) shipped. Continues the **15-PR sprint of 2026-05-12** on terminal-rendering correctness, window-tab/pane persistence, and input-bar UX hardening.
+
+**Shipped & approved:**
 
 | PR | Status | What it does |
 |---|---|---|
@@ -305,6 +342,12 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#10019`](https://github.com/warpdotdev/warp/pull/10019) | ✅ merged | Avoid duplicate apt source entries when `.sources` exists (#10011) |
 | [`#10706`](https://github.com/warpdotdev/warp/pull/10706) | ✅ merged | Toggle Rich input panel on Ctrl+G (#9916) |
 | [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | ✅ approved | Fail fast on bootstrap when Node.js / yarn are missing (#9544) |
+
+<details>
+<summary><b>Show all 52 PRs in review →</b> (terminal rendering, tab/pane persistence, input-bar UX, and spec contributions)</summary>
+
+| PR | Status | What it does |
+|---|---|---|
 | [`#10752`](https://github.com/warpdotdev/warp/pull/10752) | open | Anchor input prompt to viewport bottom during alt-screen streaming (#9365) |
 | [`#10743`](https://github.com/warpdotdev/warp/pull/10743) | open | Clear in place on CSI 2J at home position (#9181) |
 | [`#10742`](https://github.com/warpdotdev/warp/pull/10742) | open | Suppress stale "still running" toast when input box hidden for non-command reasons |
@@ -357,6 +400,8 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#10014`](https://github.com/warpdotdev/warp/pull/10014) | open | Spec: built-in `/review` slash command (#9606) |
 | [`#10013`](https://github.com/warpdotdev/warp/pull/10013) | open | Spec: File Tree icon themes (#9731) |
 | [`#9848`](https://github.com/warpdotdev/warp/pull/9848) | open | Spec: user-configurable language servers (#8803) |
+
+</details>
 
 ### Also contributing to
 
