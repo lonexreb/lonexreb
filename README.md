@@ -154,6 +154,158 @@ Rust                                        1.2%
 
 when the model is stuck, you can either complain or send a patch. i've been sending patches — across NVIDIA's open AV / RL / training stack, the agentic tooling layer, and the terminal layer.
 
+### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(15 PRs · 3 merged · 12 in review)</em>
+
+📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/fb73a4f67bc011beede2f4dc1be252a4)**
+
+**Shipped:**
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#77446`](https://github.com/openclaw/openclaw/pull/77446) | ✅ merged | Pin container-side workspace and config dirs in `docker compose` |
+| [`#77372`](https://github.com/openclaw/openclaw/pull/77372) | ✅ merged | Forward workspace bootstrap into `developerInstructions` in codex/app-server |
+| [`#74638`](https://github.com/openclaw/openclaw/pull/74638) | ✅ merged | Accept `browser.tabCleanup` keys in zod schema |
+
+<details>
+<summary><b>Show all 12 PRs in review →</b></summary>
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#81208`](https://github.com/openclaw/openclaw/pull/81208) | open | Gate amazon-bedrock-mantle implicit discovery on AWS creds presence (#67288) |
+| [`#81199`](https://github.com/openclaw/openclaw/pull/81199) | open | Re-inject system prompt on `claude --resume` (#80374) |
+| [`#81195`](https://github.com/openclaw/openclaw/pull/81195) | open | Suppress telegram media-fetch error reply in `requireMention` groups (#81181) |
+| [`#78035`](https://github.com/openclaw/openclaw/pull/78035) | open | Preserve sibling supplement results when one search rejects in `memory-core` |
+| [`#77367`](https://github.com/openclaw/openclaw/pull/77367) | open | Scope Discord `command-deploy` cache by application id (multi-tenant isolation, 3 regression tests) |
+| [`#77215`](https://github.com/openclaw/openclaw/pull/77215) | open | Document Realtime Talk requires OpenAI Platform credits, not Codex subscription |
+| [`#77184`](https://github.com/openclaw/openclaw/pull/77184) | open | Re-export `StatusSummary`, `SessionStatus`, `HeartbeatStatus` from plugin-sdk |
+| [`#75445`](https://github.com/openclaw/openclaw/pull/75445) | open | Tolerate unresolved `SecretRef` tokens during Discord/Telegram channel-actions discovery |
+| [`#75248`](https://github.com/openclaw/openclaw/pull/75248) | open | Reorder workspace `AGENTS.md` template so load-bearing rules come first |
+| [`#75217`](https://github.com/openclaw/openclaw/pull/75217) | open | Honor `skipBootstrap` at the runtime injection path |
+| [`#74891`](https://github.com/openclaw/openclaw/pull/74891) | open | Skip API-key prompt when user skipped installing the skill |
+| [`#74643`](https://github.com/openclaw/openclaw/pull/74643) | open | Per-agent `verboseDefault` and `elevatedDefault` config overrides |
+
+</details>
+
+### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(23 PRs · 8 merged · 15 in review)</em>
+
+**8 PRs merged** — test coverage and observability across VLM / audio recipes, plus data-pipeline, TB-memory-aggregation, FLOPs/MFU instrumentation, model-bridge work, and a qwen3_vl typo fix.
+
+**Shipped:**
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#3791`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3791) | ✅ merged | Fix typo in `qwen3_vl` rope comment (`seperate` → `separate`) |
+| [`#3695`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3695) | ✅ merged | MLA, MTP, and provider-override coverage for FLOPs / MFU |
+| [`#3652`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3652) | ✅ merged | Unit tests for `CometPlugin` |
+| [`#3650`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3650) | ✅ merged | Unit tests for `pg_utils` helpers |
+| [`#3649`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3649) | ✅ merged | Add NVIDIA copyright headers to four package `__init__.py` files |
+| [`#3647`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3647) | ✅ merged | Forward MoE / MTP metrics to MLFlow and Comet |
+| [`#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | ✅ merged | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
+| [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | ✅ merged | Aggregate TensorBoard memory metrics across PP group |
+
+<details>
+<summary><b>Show all 15 PRs in review →</b> (3 new docs PRs on 2026-05-13 + 10-PR unit-test sprint of 2026-05-12)</summary>
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#3800`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3800) | open | Docs: MiniMax-M2 model documentation page |
+| [`#3799`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3799) | open | Docs: Ministral 3 model documentation page |
+| [`#3798`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3798) | open | Docs: SFT dataset support guide (closes #2200) |
+| [`#3797`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3797) | open | Compact troubleshooting guide (closes #2657) |
+| [`#3792`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3792) | open | Unit tests for `cuda_graph` read-side helpers |
+| [`#3790`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3790) | open | Unit tests for `vanilla_gpt_pretrain_config` |
+| [`#3789`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3789) | open | Unit tests for Gemma2 recipe configuration builders |
+| [`#3788`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3788) | open | Unit tests for `wandb_utils` checkpoint callbacks |
+| [`#3787`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3787) | open | Unit tests for `utils/decorators` |
+| [`#3786`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3786) | open | Unit tests for `padding_utils` helpers |
+| [`#3785`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3785) | open | Unit tests for `theoretical_memory_utils` |
+| [`#3784`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3784) | open | NVIDIA copyright headers across 13 diffusion `__init__.py` files |
+| [`#3698`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3698) | open | Bridge support for OLMo-2 dense causal LMs |
+| [`#3680`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3680) | open | Unit tests for HuggingFace dataset processors |
+| [`#3665`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3665) | open | Pad chat tensors and `loss_mask` in `pre_pad_dataset` (#2610) |
+
+</details>
+
+### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(61 PRs · 8 merged · 1 approved · 52 in review)</em>
+
+📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/5e15a6a19988926f0f0fc79808d72971)**
+
+**8th merge on 2026-05-13** — Ctrl+G Rich panel toggle (#10706) shipped. Continues the **15-PR sprint of 2026-05-12** on terminal-rendering correctness, window-tab/pane persistence, and input-bar UX hardening.
+
+**Shipped & approved:**
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#9558`](https://github.com/warpdotdev/warp/pull/9558) | ✅ merged | Align OSS `.desktop` `Exec` with packaged binary name |
+| [`#9563`](https://github.com/warpdotdev/warp/pull/9563) | ✅ merged | Attribute Alacritty/vte derivative code in two more files |
+| [`#9667`](https://github.com/warpdotdev/warp/pull/9667) | ✅ merged | Recognize Mistral Vibe as a CLI agent |
+| [`#9670`](https://github.com/warpdotdev/warp/pull/9670) | ✅ merged | Route `CLIAgent::Pi` to the default session listener |
+| [`#9671`](https://github.com/warpdotdev/warp/pull/9671) | ✅ merged | Clear permission-scoped state when leaving the permission flow (#9525) |
+| [`#9712`](https://github.com/warpdotdev/warp/pull/9712) | ✅ merged | Register Rename Active Pane as a keyboard-bindable action (#9351) |
+| [`#10019`](https://github.com/warpdotdev/warp/pull/10019) | ✅ merged | Avoid duplicate apt source entries when `.sources` exists (#10011) |
+| [`#10706`](https://github.com/warpdotdev/warp/pull/10706) | ✅ merged | Toggle Rich input panel on Ctrl+G (#9916) |
+| [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | ✅ approved | Fail fast on bootstrap when Node.js / yarn are missing (#9544) |
+
+<details>
+<summary><b>Show all 52 PRs in review →</b> (terminal rendering, tab/pane persistence, input-bar UX, and spec contributions)</summary>
+
+| PR | Status | What it does |
+|---|---|---|
+| [`#10752`](https://github.com/warpdotdev/warp/pull/10752) | open | Anchor input prompt to viewport bottom during alt-screen streaming (#9365) |
+| [`#10743`](https://github.com/warpdotdev/warp/pull/10743) | open | Clear in place on CSI 2J at home position (#9181) |
+| [`#10742`](https://github.com/warpdotdev/warp/pull/10742) | open | Suppress stale "still running" toast when input box hidden for non-command reasons |
+| [`#10738`](https://github.com/warpdotdev/warp/pull/10738) | open | Render group header for every multi-pane vertical tab (#9098) |
+| [`#10737`](https://github.com/warpdotdev/warp/pull/10737) | open | Diagnosis: typing order on slow systems (#9418) |
+| [`#10736`](https://github.com/warpdotdev/warp/pull/10736) | open | Suppress error underline until external commands load (#9182) |
+| [`#10735`](https://github.com/warpdotdev/warp/pull/10735) | open | Preserve terminal scroll position across tab switches (#9171) |
+| [`#10734`](https://github.com/warpdotdev/warp/pull/10734) | open | Preserve user-set tab name across AI auto-naming (#9102) |
+| [`#10730`](https://github.com/warpdotdev/warp/pull/10730) | open | Honor user-defined keybindings over default conflicts (#9128) |
+| [`#10729`](https://github.com/warpdotdev/warp/pull/10729) | open | Keep pinned input anchored during inline interactive prompts (#10144) |
+| [`#10709`](https://github.com/warpdotdev/warp/pull/10709) | open | Add "Copy as Markdown" to plan dropdown menu (#9214) |
+| [`#10708`](https://github.com/warpdotdev/warp/pull/10708) | open | Restore presentation state on unexpected in-band end marker (#9817) |
+| [`#10707`](https://github.com/warpdotdev/warp/pull/10707) | open | Map visual rows to source rows for softwrap inside markdown tables (#10016) |
+| [`#10500`](https://github.com/warpdotdev/warp/pull/10500) | open | Spec: machine-readable export for agent conversations (#10112) |
+| [`#10498`](https://github.com/warpdotdev/warp/pull/10498) | open | Spec: per-window zoom level (#10115) |
+| [`#10497`](https://github.com/warpdotdev/warp/pull/10497) | open | Spec: bindable shortcut to copy editor file path (#10290) |
+| [`#10496`](https://github.com/warpdotdev/warp/pull/10496) | open | Spec: option to clamp/disable truecolor BCE bg painting (#10278) |
+| [`#10495`](https://github.com/warpdotdev/warp/pull/10495) | open | Spec: alert maintainers about duplicate PRs (#10395) |
+| [`#10462`](https://github.com/warpdotdev/warp/pull/10462) | open | Spec: `<details>`/`<summary>` in markdown rendering (#10259) |
+| [`#10461`](https://github.com/warpdotdev/warp/pull/10461) | open | Spec: start timestamp on collapsed agent reasoning phases (#10292) |
+| [`#10460`](https://github.com/warpdotdev/warp/pull/10460) | open | Spec: file tree search (#10320) |
+| [`#10459`](https://github.com/warpdotdev/warp/pull/10459) | open | Spec: configurable word delimiters for word-deletion shortcuts (#10348) |
+| [`#10457`](https://github.com/warpdotdev/warp/pull/10457) | open | Spec: bulk delete chat history (#10359) |
+| [`#10456`](https://github.com/warpdotdev/warp/pull/10456) | open | Spec: folder tree view for Code Review file list (#10340) |
+| [`#10455`](https://github.com/warpdotdev/warp/pull/10455) | open | Spec: opt-in native left-drag selection in TUIs (#10353) |
+| [`#10454`](https://github.com/warpdotdev/warp/pull/10454) | open | Spec: AI credit usage in status bar (#10449) |
+| [`#10380`](https://github.com/warpdotdev/warp/pull/10380) | open | Spec: requested command details expanded by default (#8967) |
+| [`#10232`](https://github.com/warpdotdev/warp/pull/10232) | open | Spec: editable prompt suggestions (#9842) |
+| [`#10231`](https://github.com/warpdotdev/warp/pull/10231) | open | Spec: horizontal scrolling per terminal pane (#9828) |
+| [`#10230`](https://github.com/warpdotdev/warp/pull/10230) | open | Spec: refresh repo metadata after `claude --worktree` (#10031) |
+| [`#10229`](https://github.com/warpdotdev/warp/pull/10229) | open | Spec: tab configs specify agent profile (#10171) |
+| [`#10228`](https://github.com/warpdotdev/warp/pull/10228) | open | Spec: prevent overshoot scrolling code diff to top (#9808) |
+| [`#10227`](https://github.com/warpdotdev/warp/pull/10227) | open | Spec: toolbelt buttons on collapsed conversation blocklist items (#9810) |
+| [`#10226`](https://github.com/warpdotdev/warp/pull/10226) | open | Spec: improve default proportional font readability (#9953) |
+| [`#10225`](https://github.com/warpdotdev/warp/pull/10225) | open | Spec: multiline + command-keyed redaction (#10027) |
+| [`#10224`](https://github.com/warpdotdev/warp/pull/10224) | open | Spec: persistent weekly USD spend status bar (#9965) |
+| [`#10223`](https://github.com/warpdotdev/warp/pull/10223) | open | Spec: open review panel maximised by default (#10036) |
+| [`#10222`](https://github.com/warpdotdev/warp/pull/10222) | open | Spec: unified file-read interface (#10049) |
+| [`#10179`](https://github.com/warpdotdev/warp/pull/10179) | open | Show agent status badges in vertical-tabs summary view (#9868) |
+| [`#10129`](https://github.com/warpdotdev/warp/pull/10129) | open | Spec: generic syntax-highlight definition mechanism (#9955) |
+| [`#10128`](https://github.com/warpdotdev/warp/pull/10128) | open | Spec: per-message timestamps in Agent Mode (#9889) |
+| [`#10127`](https://github.com/warpdotdev/warp/pull/10127) | open | Spec: voice input hotkey picker — Caps Lock, F-keys, custom (#9869) |
+| [`#10126`](https://github.com/warpdotdev/warp/pull/10126) | open | Spec: render inline image protocols at shell startup (#10020) |
+| [`#10026`](https://github.com/warpdotdev/warp/pull/10026) | open | Spec: Shift+Click extends terminal text selection (#9963) |
+| [`#10025`](https://github.com/warpdotdev/warp/pull/10025) | open | Spec: Reload File Tree action in Command Palette (#10003) |
+| [`#10023`](https://github.com/warpdotdev/warp/pull/10023) | open | Spec: Tab Configs in Command Palette and keyboard shortcuts (#9176) |
+| [`#10022`](https://github.com/warpdotdev/warp/pull/10022) | open | Detect Node.js / Python shebang scripts as their agent identity (#9870) |
+| [`#10018`](https://github.com/warpdotdev/warp/pull/10018) | open | Spec: launch configs that open at app startup (#9203) |
+| [`#10017`](https://github.com/warpdotdev/warp/pull/10017) | open | Install Xcode Metal Toolchain on macOS during bootstrap (#9996) |
+| [`#10014`](https://github.com/warpdotdev/warp/pull/10014) | open | Spec: built-in `/review` slash command (#9606) |
+| [`#10013`](https://github.com/warpdotdev/warp/pull/10013) | open | Spec: File Tree icon themes (#9731) |
+| [`#9848`](https://github.com/warpdotdev/warp/pull/9848) | open | Spec: user-configurable language servers (#8803) |
+
+</details>
+
 ### 🌟 Featured: <a href="https://github.com/NVlabs/alpamayo">NVlabs/alpamayo</a> — NVIDIA's open foundational driving model (Physical AI / AV) <em>(32 PRs · 1 merged · 31 in review)</em>
 
 **The last 32 consecutive PRs to the repo are mine** — a sustained sprint hardening NVIDIA's open foundational driving model across input validation, runtime/attention correctness, type annotations, evaluation metrics, regression tests, docstring-vs-code drift, and first-run onboarding.
@@ -248,158 +400,6 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#2389`](https://github.com/NVIDIA-NeMo/RL/pull/2389) | open | Add author field to README citation BibTeX |
 | [`#2388`](https://github.com/NVIDIA-NeMo/RL/pull/2388) | open | Bump `accelerate` floor to 1.1.0 for `transformers` 5.3.0 compat |
 | [`#2387`](https://github.com/NVIDIA-NeMo/RL/pull/2387) | open | Test coverage for converter CLI entry points |
-
-</details>
-
-### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(23 PRs · 8 merged · 15 in review)</em>
-
-**8 PRs merged** — test coverage and observability across VLM / audio recipes, plus data-pipeline, TB-memory-aggregation, FLOPs/MFU instrumentation, model-bridge work, and a qwen3_vl typo fix.
-
-**Shipped:**
-
-| PR | Status | What it does |
-|---|---|---|
-| [`#3791`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3791) | ✅ merged | Fix typo in `qwen3_vl` rope comment (`seperate` → `separate`) |
-| [`#3695`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3695) | ✅ merged | MLA, MTP, and provider-override coverage for FLOPs / MFU |
-| [`#3652`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3652) | ✅ merged | Unit tests for `CometPlugin` |
-| [`#3650`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3650) | ✅ merged | Unit tests for `pg_utils` helpers |
-| [`#3649`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3649) | ✅ merged | Add NVIDIA copyright headers to four package `__init__.py` files |
-| [`#3647`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3647) | ✅ merged | Forward MoE / MTP metrics to MLFlow and Comet |
-| [`#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | ✅ merged | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
-| [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | ✅ merged | Aggregate TensorBoard memory metrics across PP group |
-
-<details>
-<summary><b>Show all 15 PRs in review →</b> (3 new docs PRs on 2026-05-13 + 10-PR unit-test sprint of 2026-05-12)</summary>
-
-| PR | Status | What it does |
-|---|---|---|
-| [`#3800`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3800) | open | Docs: MiniMax-M2 model documentation page |
-| [`#3799`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3799) | open | Docs: Ministral 3 model documentation page |
-| [`#3798`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3798) | open | Docs: SFT dataset support guide (closes #2200) |
-| [`#3797`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3797) | open | Compact troubleshooting guide (closes #2657) |
-| [`#3792`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3792) | open | Unit tests for `cuda_graph` read-side helpers |
-| [`#3790`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3790) | open | Unit tests for `vanilla_gpt_pretrain_config` |
-| [`#3789`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3789) | open | Unit tests for Gemma2 recipe configuration builders |
-| [`#3788`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3788) | open | Unit tests for `wandb_utils` checkpoint callbacks |
-| [`#3787`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3787) | open | Unit tests for `utils/decorators` |
-| [`#3786`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3786) | open | Unit tests for `padding_utils` helpers |
-| [`#3785`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3785) | open | Unit tests for `theoretical_memory_utils` |
-| [`#3784`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3784) | open | NVIDIA copyright headers across 13 diffusion `__init__.py` files |
-| [`#3698`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3698) | open | Bridge support for OLMo-2 dense causal LMs |
-| [`#3680`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3680) | open | Unit tests for HuggingFace dataset processors |
-| [`#3665`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3665) | open | Pad chat tensors and `loss_mask` in `pre_pad_dataset` (#2610) |
-
-</details>
-
-### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(15 PRs · 3 merged · 12 in review)</em>
-
-📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/fb73a4f67bc011beede2f4dc1be252a4)**
-
-**Shipped:**
-
-| PR | Status | What it does |
-|---|---|---|
-| [`#77446`](https://github.com/openclaw/openclaw/pull/77446) | ✅ merged | Pin container-side workspace and config dirs in `docker compose` |
-| [`#77372`](https://github.com/openclaw/openclaw/pull/77372) | ✅ merged | Forward workspace bootstrap into `developerInstructions` in codex/app-server |
-| [`#74638`](https://github.com/openclaw/openclaw/pull/74638) | ✅ merged | Accept `browser.tabCleanup` keys in zod schema |
-
-<details>
-<summary><b>Show all 12 PRs in review →</b></summary>
-
-| PR | Status | What it does |
-|---|---|---|
-| [`#81208`](https://github.com/openclaw/openclaw/pull/81208) | open | Gate amazon-bedrock-mantle implicit discovery on AWS creds presence (#67288) |
-| [`#81199`](https://github.com/openclaw/openclaw/pull/81199) | open | Re-inject system prompt on `claude --resume` (#80374) |
-| [`#81195`](https://github.com/openclaw/openclaw/pull/81195) | open | Suppress telegram media-fetch error reply in `requireMention` groups (#81181) |
-| [`#78035`](https://github.com/openclaw/openclaw/pull/78035) | open | Preserve sibling supplement results when one search rejects in `memory-core` |
-| [`#77367`](https://github.com/openclaw/openclaw/pull/77367) | open | Scope Discord `command-deploy` cache by application id (multi-tenant isolation, 3 regression tests) |
-| [`#77215`](https://github.com/openclaw/openclaw/pull/77215) | open | Document Realtime Talk requires OpenAI Platform credits, not Codex subscription |
-| [`#77184`](https://github.com/openclaw/openclaw/pull/77184) | open | Re-export `StatusSummary`, `SessionStatus`, `HeartbeatStatus` from plugin-sdk |
-| [`#75445`](https://github.com/openclaw/openclaw/pull/75445) | open | Tolerate unresolved `SecretRef` tokens during Discord/Telegram channel-actions discovery |
-| [`#75248`](https://github.com/openclaw/openclaw/pull/75248) | open | Reorder workspace `AGENTS.md` template so load-bearing rules come first |
-| [`#75217`](https://github.com/openclaw/openclaw/pull/75217) | open | Honor `skipBootstrap` at the runtime injection path |
-| [`#74891`](https://github.com/openclaw/openclaw/pull/74891) | open | Skip API-key prompt when user skipped installing the skill |
-| [`#74643`](https://github.com/openclaw/openclaw/pull/74643) | open | Per-agent `verboseDefault` and `elevatedDefault` config overrides |
-
-</details>
-
-### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(61 PRs · 8 merged · 1 approved · 52 in review)</em>
-
-📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/5e15a6a19988926f0f0fc79808d72971)**
-
-**8th merge on 2026-05-13** — Ctrl+G Rich panel toggle (#10706) shipped. Continues the **15-PR sprint of 2026-05-12** on terminal-rendering correctness, window-tab/pane persistence, and input-bar UX hardening.
-
-**Shipped & approved:**
-
-| PR | Status | What it does |
-|---|---|---|
-| [`#9558`](https://github.com/warpdotdev/warp/pull/9558) | ✅ merged | Align OSS `.desktop` `Exec` with packaged binary name |
-| [`#9563`](https://github.com/warpdotdev/warp/pull/9563) | ✅ merged | Attribute Alacritty/vte derivative code in two more files |
-| [`#9667`](https://github.com/warpdotdev/warp/pull/9667) | ✅ merged | Recognize Mistral Vibe as a CLI agent |
-| [`#9670`](https://github.com/warpdotdev/warp/pull/9670) | ✅ merged | Route `CLIAgent::Pi` to the default session listener |
-| [`#9671`](https://github.com/warpdotdev/warp/pull/9671) | ✅ merged | Clear permission-scoped state when leaving the permission flow (#9525) |
-| [`#9712`](https://github.com/warpdotdev/warp/pull/9712) | ✅ merged | Register Rename Active Pane as a keyboard-bindable action (#9351) |
-| [`#10019`](https://github.com/warpdotdev/warp/pull/10019) | ✅ merged | Avoid duplicate apt source entries when `.sources` exists (#10011) |
-| [`#10706`](https://github.com/warpdotdev/warp/pull/10706) | ✅ merged | Toggle Rich input panel on Ctrl+G (#9916) |
-| [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | ✅ approved | Fail fast on bootstrap when Node.js / yarn are missing (#9544) |
-
-<details>
-<summary><b>Show all 52 PRs in review →</b> (terminal rendering, tab/pane persistence, input-bar UX, and spec contributions)</summary>
-
-| PR | Status | What it does |
-|---|---|---|
-| [`#10752`](https://github.com/warpdotdev/warp/pull/10752) | open | Anchor input prompt to viewport bottom during alt-screen streaming (#9365) |
-| [`#10743`](https://github.com/warpdotdev/warp/pull/10743) | open | Clear in place on CSI 2J at home position (#9181) |
-| [`#10742`](https://github.com/warpdotdev/warp/pull/10742) | open | Suppress stale "still running" toast when input box hidden for non-command reasons |
-| [`#10738`](https://github.com/warpdotdev/warp/pull/10738) | open | Render group header for every multi-pane vertical tab (#9098) |
-| [`#10737`](https://github.com/warpdotdev/warp/pull/10737) | open | Diagnosis: typing order on slow systems (#9418) |
-| [`#10736`](https://github.com/warpdotdev/warp/pull/10736) | open | Suppress error underline until external commands load (#9182) |
-| [`#10735`](https://github.com/warpdotdev/warp/pull/10735) | open | Preserve terminal scroll position across tab switches (#9171) |
-| [`#10734`](https://github.com/warpdotdev/warp/pull/10734) | open | Preserve user-set tab name across AI auto-naming (#9102) |
-| [`#10730`](https://github.com/warpdotdev/warp/pull/10730) | open | Honor user-defined keybindings over default conflicts (#9128) |
-| [`#10729`](https://github.com/warpdotdev/warp/pull/10729) | open | Keep pinned input anchored during inline interactive prompts (#10144) |
-| [`#10709`](https://github.com/warpdotdev/warp/pull/10709) | open | Add "Copy as Markdown" to plan dropdown menu (#9214) |
-| [`#10708`](https://github.com/warpdotdev/warp/pull/10708) | open | Restore presentation state on unexpected in-band end marker (#9817) |
-| [`#10707`](https://github.com/warpdotdev/warp/pull/10707) | open | Map visual rows to source rows for softwrap inside markdown tables (#10016) |
-| [`#10500`](https://github.com/warpdotdev/warp/pull/10500) | open | Spec: machine-readable export for agent conversations (#10112) |
-| [`#10498`](https://github.com/warpdotdev/warp/pull/10498) | open | Spec: per-window zoom level (#10115) |
-| [`#10497`](https://github.com/warpdotdev/warp/pull/10497) | open | Spec: bindable shortcut to copy editor file path (#10290) |
-| [`#10496`](https://github.com/warpdotdev/warp/pull/10496) | open | Spec: option to clamp/disable truecolor BCE bg painting (#10278) |
-| [`#10495`](https://github.com/warpdotdev/warp/pull/10495) | open | Spec: alert maintainers about duplicate PRs (#10395) |
-| [`#10462`](https://github.com/warpdotdev/warp/pull/10462) | open | Spec: `<details>`/`<summary>` in markdown rendering (#10259) |
-| [`#10461`](https://github.com/warpdotdev/warp/pull/10461) | open | Spec: start timestamp on collapsed agent reasoning phases (#10292) |
-| [`#10460`](https://github.com/warpdotdev/warp/pull/10460) | open | Spec: file tree search (#10320) |
-| [`#10459`](https://github.com/warpdotdev/warp/pull/10459) | open | Spec: configurable word delimiters for word-deletion shortcuts (#10348) |
-| [`#10457`](https://github.com/warpdotdev/warp/pull/10457) | open | Spec: bulk delete chat history (#10359) |
-| [`#10456`](https://github.com/warpdotdev/warp/pull/10456) | open | Spec: folder tree view for Code Review file list (#10340) |
-| [`#10455`](https://github.com/warpdotdev/warp/pull/10455) | open | Spec: opt-in native left-drag selection in TUIs (#10353) |
-| [`#10454`](https://github.com/warpdotdev/warp/pull/10454) | open | Spec: AI credit usage in status bar (#10449) |
-| [`#10380`](https://github.com/warpdotdev/warp/pull/10380) | open | Spec: requested command details expanded by default (#8967) |
-| [`#10232`](https://github.com/warpdotdev/warp/pull/10232) | open | Spec: editable prompt suggestions (#9842) |
-| [`#10231`](https://github.com/warpdotdev/warp/pull/10231) | open | Spec: horizontal scrolling per terminal pane (#9828) |
-| [`#10230`](https://github.com/warpdotdev/warp/pull/10230) | open | Spec: refresh repo metadata after `claude --worktree` (#10031) |
-| [`#10229`](https://github.com/warpdotdev/warp/pull/10229) | open | Spec: tab configs specify agent profile (#10171) |
-| [`#10228`](https://github.com/warpdotdev/warp/pull/10228) | open | Spec: prevent overshoot scrolling code diff to top (#9808) |
-| [`#10227`](https://github.com/warpdotdev/warp/pull/10227) | open | Spec: toolbelt buttons on collapsed conversation blocklist items (#9810) |
-| [`#10226`](https://github.com/warpdotdev/warp/pull/10226) | open | Spec: improve default proportional font readability (#9953) |
-| [`#10225`](https://github.com/warpdotdev/warp/pull/10225) | open | Spec: multiline + command-keyed redaction (#10027) |
-| [`#10224`](https://github.com/warpdotdev/warp/pull/10224) | open | Spec: persistent weekly USD spend status bar (#9965) |
-| [`#10223`](https://github.com/warpdotdev/warp/pull/10223) | open | Spec: open review panel maximised by default (#10036) |
-| [`#10222`](https://github.com/warpdotdev/warp/pull/10222) | open | Spec: unified file-read interface (#10049) |
-| [`#10179`](https://github.com/warpdotdev/warp/pull/10179) | open | Show agent status badges in vertical-tabs summary view (#9868) |
-| [`#10129`](https://github.com/warpdotdev/warp/pull/10129) | open | Spec: generic syntax-highlight definition mechanism (#9955) |
-| [`#10128`](https://github.com/warpdotdev/warp/pull/10128) | open | Spec: per-message timestamps in Agent Mode (#9889) |
-| [`#10127`](https://github.com/warpdotdev/warp/pull/10127) | open | Spec: voice input hotkey picker — Caps Lock, F-keys, custom (#9869) |
-| [`#10126`](https://github.com/warpdotdev/warp/pull/10126) | open | Spec: render inline image protocols at shell startup (#10020) |
-| [`#10026`](https://github.com/warpdotdev/warp/pull/10026) | open | Spec: Shift+Click extends terminal text selection (#9963) |
-| [`#10025`](https://github.com/warpdotdev/warp/pull/10025) | open | Spec: Reload File Tree action in Command Palette (#10003) |
-| [`#10023`](https://github.com/warpdotdev/warp/pull/10023) | open | Spec: Tab Configs in Command Palette and keyboard shortcuts (#9176) |
-| [`#10022`](https://github.com/warpdotdev/warp/pull/10022) | open | Detect Node.js / Python shebang scripts as their agent identity (#9870) |
-| [`#10018`](https://github.com/warpdotdev/warp/pull/10018) | open | Spec: launch configs that open at app startup (#9203) |
-| [`#10017`](https://github.com/warpdotdev/warp/pull/10017) | open | Install Xcode Metal Toolchain on macOS during bootstrap (#9996) |
-| [`#10014`](https://github.com/warpdotdev/warp/pull/10014) | open | Spec: built-in `/review` slash command (#9606) |
-| [`#10013`](https://github.com/warpdotdev/warp/pull/10013) | open | Spec: File Tree icon themes (#9731) |
-| [`#9848`](https://github.com/warpdotdev/warp/pull/9848) | open | Spec: user-configurable language servers (#8803) |
 
 </details>
 
