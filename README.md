@@ -27,7 +27,7 @@
 <table>
 <tr>
 <td align="center" width="33%">
-<img src="https://img.shields.io/badge/Merged-18-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" alt="Merged PRs" /><br/>
+<img src="https://img.shields.io/badge/Merged-20-000000?style=for-the-badge&logo=github&logoColor=white&labelColor=000000" alt="Merged PRs" /><br/>
 <sub><b>shipped upstream</b></sub>
 </td>
 <td align="center" width="33%">
@@ -61,6 +61,8 @@
 | 16 | [`Megatron-Bridge#3652`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3652) | NVIDIA-NeMo/Megatron-Bridge | Unit tests for `CometPlugin` |
 | 17 | [`Megatron-Bridge#3695`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3695) | NVIDIA-NeMo/Megatron-Bridge | MLA, MTP, and provider-override coverage for FLOPs / MFU |
 | 18 | [`warp#9671`](https://github.com/warpdotdev/warp/pull/9671) | warpdotdev/warp | Clear permission-scoped state when leaving the permission flow |
+| 19 | [`Megatron-Bridge#3791`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3791) | NVIDIA-NeMo/Megatron-Bridge | Fix typo in `qwen3_vl` rope comment (`seperate` → `separate`) |
+| 20 | [`warp#10706`](https://github.com/warpdotdev/warp/pull/10706) | warpdotdev/warp | Toggle Rich input panel on Ctrl+G (#9916) |
 
 <div align="center"><sub>·  ·  ·</sub></div>
 
@@ -234,12 +236,13 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#2388`](https://github.com/NVIDIA-NeMo/RL/pull/2388) | open | Bump `accelerate` floor to 1.1.0 for `transformers` 5.3.0 compat |
 | [`#2387`](https://github.com/NVIDIA-NeMo/RL/pull/2387) | open | Test coverage for converter CLI entry points |
 
-### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(20 PRs · 7 merged)</em>
+### <a href="https://github.com/NVIDIA-NeMo/Megatron-Bridge">NVIDIA-NeMo/Megatron-Bridge</a> — NVIDIA's bridge between Megatron-LM and NeMo training recipes <em>(23 PRs · 8 merged)</em>
 
-**7 PRs merged** — test coverage and observability across VLM / audio recipes, plus data-pipeline, TB-memory-aggregation, FLOPs/MFU instrumentation, and model-bridge work. **10 new PRs on 2026-05-12** — a sprint of unit-test coverage across recipes/training/utils + diffusion-pkg headers, troubleshooting docs, and a typo fix.
+**8 PRs merged** — test coverage and observability across VLM / audio recipes, plus data-pipeline, TB-memory-aggregation, FLOPs/MFU instrumentation, model-bridge work, and a qwen3_vl typo fix. **3 new docs PRs on 2026-05-13** (SFT dataset guide + Ministral 3 / MiniMax-M2 model pages) follow the **10-PR unit-test sprint of 2026-05-12**.
 
 | PR | Status | What it does |
 |---|---|---|
+| [`#3791`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3791) | ✅ merged | Fix typo in `qwen3_vl` rope comment (`seperate` → `separate`) |
 | [`#3695`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3695) | ✅ merged | MLA, MTP, and provider-override coverage for FLOPs / MFU |
 | [`#3652`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3652) | ✅ merged | Unit tests for `CometPlugin` |
 | [`#3650`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3650) | ✅ merged | Unit tests for `pg_utils` helpers |
@@ -247,9 +250,11 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#3647`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3647) | ✅ merged | Forward MoE / MTP metrics to MLFlow and Comet |
 | [`#3646`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3646) | ✅ merged | Unit tests for `qwen2_audio` and `kimi_k25_vl` recipes |
 | [`#3645`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3645) | ✅ merged | Aggregate TensorBoard memory metrics across PP group |
+| [`#3800`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3800) | open | Docs: MiniMax-M2 model documentation page |
+| [`#3799`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3799) | open | Docs: Ministral 3 model documentation page |
+| [`#3798`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3798) | open | Docs: SFT dataset support guide (closes #2200) |
 | [`#3797`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3797) | open | Compact troubleshooting guide (closes #2657) |
 | [`#3792`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3792) | open | Unit tests for `cuda_graph` read-side helpers |
-| [`#3791`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3791) | open | Fix typo in `qwen3_vl` rope comment (`seperate` → `separate`) |
 | [`#3790`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3790) | open | Unit tests for `vanilla_gpt_pretrain_config` |
 | [`#3789`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3789) | open | Unit tests for Gemma2 recipe configuration builders |
 | [`#3788`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3788) | open | Unit tests for `wandb_utils` checkpoint callbacks |
@@ -261,7 +266,7 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#3680`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3680) | open | Unit tests for HuggingFace dataset processors |
 | [`#3665`](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pull/3665) | open | Pad chat tensors and `loss_mask` in `pre_pad_dataset` (#2610) |
 
-### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(14 PRs · 3 merged)</em>
+### <a href="https://github.com/openclaw/openclaw">openclaw/openclaw</a> — agentic coding platform <em>(15 PRs · 3 merged)</em>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/fb73a4f67bc011beede2f4dc1be252a4)**
 
@@ -270,6 +275,7 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#77446`](https://github.com/openclaw/openclaw/pull/77446) | ✅ merged | Pin container-side workspace and config dirs in `docker compose` |
 | [`#77372`](https://github.com/openclaw/openclaw/pull/77372) | ✅ merged | Forward workspace bootstrap into `developerInstructions` in codex/app-server |
 | [`#74638`](https://github.com/openclaw/openclaw/pull/74638) | ✅ merged | Accept `browser.tabCleanup` keys in zod schema |
+| [`#81208`](https://github.com/openclaw/openclaw/pull/81208) | open | Gate amazon-bedrock-mantle implicit discovery on AWS creds presence (#67288) |
 | [`#81199`](https://github.com/openclaw/openclaw/pull/81199) | open | Re-inject system prompt on `claude --resume` (#80374) |
 | [`#81195`](https://github.com/openclaw/openclaw/pull/81195) | open | Suppress telegram media-fetch error reply in `requireMention` groups (#81181) |
 | [`#78035`](https://github.com/openclaw/openclaw/pull/78035) | open | Preserve sibling supplement results when one search rejects in `memory-core` |
@@ -282,11 +288,11 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#74891`](https://github.com/openclaw/openclaw/pull/74891) | open | Skip API-key prompt when user skipped installing the skill |
 | [`#74643`](https://github.com/openclaw/openclaw/pull/74643) | open | Per-agent `verboseDefault` and `elevatedDefault` config overrides |
 
-### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(62 PRs · 7 merged · 1 approved)</em>
+### <a href="https://github.com/warpdotdev/warp">warpdotdev/warp</a> — agentic terminal <em>(61 PRs · 8 merged · 1 approved)</em>
 
 📝 **[Workflow notes & lessons learned from this contribution sprint →](https://gist.github.com/lonexreb/5e15a6a19988926f0f0fc79808d72971)**
 
-**15 new PRs on 2026-05-12** — terminal-rendering correctness, window-tab/pane persistence, and input-bar UX hardening.
+**8th merge on 2026-05-13** — Ctrl+G Rich panel toggle (#10706) shipped. Continues the **15-PR sprint of 2026-05-12** on terminal-rendering correctness, window-tab/pane persistence, and input-bar UX hardening.
 
 | PR | Status | What it does |
 |---|---|---|
@@ -297,6 +303,7 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#9671`](https://github.com/warpdotdev/warp/pull/9671) | ✅ merged | Clear permission-scoped state when leaving the permission flow (#9525) |
 | [`#9712`](https://github.com/warpdotdev/warp/pull/9712) | ✅ merged | Register Rename Active Pane as a keyboard-bindable action (#9351) |
 | [`#10019`](https://github.com/warpdotdev/warp/pull/10019) | ✅ merged | Avoid duplicate apt source entries when `.sources` exists (#10011) |
+| [`#10706`](https://github.com/warpdotdev/warp/pull/10706) | ✅ merged | Toggle Rich input panel on Ctrl+G (#9916) |
 | [`#9669`](https://github.com/warpdotdev/warp/pull/9669) | ✅ approved | Fail fast on bootstrap when Node.js / yarn are missing (#9544) |
 | [`#10752`](https://github.com/warpdotdev/warp/pull/10752) | open | Anchor input prompt to viewport bottom during alt-screen streaming (#9365) |
 | [`#10743`](https://github.com/warpdotdev/warp/pull/10743) | open | Clear in place on CSI 2J at home position (#9181) |
@@ -306,13 +313,11 @@ Production-grade error handling, configuration ergonomics, and test coverage for
 | [`#10736`](https://github.com/warpdotdev/warp/pull/10736) | open | Suppress error underline until external commands load (#9182) |
 | [`#10735`](https://github.com/warpdotdev/warp/pull/10735) | open | Preserve terminal scroll position across tab switches (#9171) |
 | [`#10734`](https://github.com/warpdotdev/warp/pull/10734) | open | Preserve user-set tab name across AI auto-naming (#9102) |
-| [`#10731`](https://github.com/warpdotdev/warp/pull/10731) | open | Add `command_input_min_lines` setting (#9197) |
 | [`#10730`](https://github.com/warpdotdev/warp/pull/10730) | open | Honor user-defined keybindings over default conflicts (#9128) |
 | [`#10729`](https://github.com/warpdotdev/warp/pull/10729) | open | Keep pinned input anchored during inline interactive prompts (#10144) |
 | [`#10709`](https://github.com/warpdotdev/warp/pull/10709) | open | Add "Copy as Markdown" to plan dropdown menu (#9214) |
 | [`#10708`](https://github.com/warpdotdev/warp/pull/10708) | open | Restore presentation state on unexpected in-band end marker (#9817) |
 | [`#10707`](https://github.com/warpdotdev/warp/pull/10707) | open | Map visual rows to source rows for softwrap inside markdown tables (#10016) |
-| [`#10706`](https://github.com/warpdotdev/warp/pull/10706) | open | Toggle Rich input panel on Ctrl+G (#9916) |
 | [`#10500`](https://github.com/warpdotdev/warp/pull/10500) | open | Spec: machine-readable export for agent conversations (#10112) |
 | [`#10498`](https://github.com/warpdotdev/warp/pull/10498) | open | Spec: per-window zoom level (#10115) |
 | [`#10497`](https://github.com/warpdotdev/warp/pull/10497) | open | Spec: bindable shortcut to copy editor file path (#10290) |
