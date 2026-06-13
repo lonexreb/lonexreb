@@ -16,7 +16,7 @@ Building [Paloa Labs](https://paloa.ai) — computer-vision infrastructure for A
 
 - **[Paloa Labs](https://paloa.ai)** — CV pipeline for film analytics. Sports first, then anything that moves on a field.
 - **[Zigsaw](https://zigsaw.dev)** — Chat or drag-and-drop to ship multi-LLM workflows as APIs. 100+ integrations.
-- A run of upstream patches across the open infrastructure I build on — NVIDIA's AV / training stack, Warp, OpenClaw.
+- A run of upstream patches across the open infrastructure I build on — NVIDIA, Warp, Anyscale's Ray, OpenClaw, OurResearch.
 
 ### Selected work
 
@@ -33,9 +33,11 @@ Building [Paloa Labs](https://paloa.ai) — computer-vision infrastructure for A
 
 Contributing back to the infrastructure I rely on. A representative cut:
 
-- **NVIDIA** — [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pulls?q=author%3Alonexreb+is%3Amerged): MoE / MTP metrics, FLOPs / MFU coverage, TensorBoard memory aggregation across PP. [Alpamayo](https://github.com/NVlabs/alpamayo/pull/73): input-validation hardening for the open foundational driving model.
+- **NVIDIA** — [Megatron-Bridge](https://github.com/NVIDIA-NeMo/Megatron-Bridge/pulls?q=author%3Alonexreb+is%3Amerged): MoE / MTP metrics, FLOPs / MFU coverage, TensorBoard memory aggregation across PP. [NeMo / RL](https://github.com/NVIDIA-NeMo/RL/pulls?q=author%3Alonexreb+is%3Amerged): dotted import paths for datasets. [Alpamayo](https://github.com/NVlabs/alpamayo/pull/73): input-validation hardening for the open foundational driving model.
 - **[Warp](https://github.com/warpdotdev/warp/pulls?q=author%3Alonexreb+is%3Amerged)** — terminal rendering correctness, permission-flow cleanup, input-bar UX, CLI-agent routing.
-- **[OpenClaw](https://github.com/openclaw/openclaw/pulls?q=author%3Alonexreb+is%3Amerged)** — `docker compose` config hardening, schema fixes, agent bootstrap.
+- **OpenClaw** — [openclaw](https://github.com/openclaw/openclaw/pulls?q=author%3Alonexreb+is%3Amerged): `docker compose` hardening, schema fixes, multi-tenant cache scoping, log-hostname correctness. [Peekaboo](https://github.com/openclaw/Peekaboo/pulls?q=author%3Alonexreb+is%3Amerged): multi-display capture fallback.
+- **[Ray](https://github.com/ray-project/ray/pulls?q=author%3Alonexreb+is%3Amerged)** (Anyscale) — `runtime_env` upload-size warnings, persistent-storage docs for Ray Train.
+- **[parseland-eval](https://github.com/ourresearch/parseland-eval/pulls?q=author%3Alonexreb+is%3Amerged)** (OurResearch) — `goldie` CLI for gold-standard HTML extraction; leak-safe eval cycles.
 
 ---
 
